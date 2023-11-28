@@ -148,7 +148,7 @@ const Navbar = () => {
           <nav
             className={`lg:px-14 px-14 h-full ${
               isSticky
-                ? "sticky top-0 left-0 right-0 bg-[white] duration-300"
+                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary"
                 : ""
             }`}
           >
@@ -194,7 +194,7 @@ const Navbar = () => {
                       offset={-100}
                       key={path}
                       className={`block text-gray90 hover:text-brandPrimary pl-4 pr-4 pt-[26px] pb-[26px] border-r ${
-                        index < navItems.length - 1 ? "" : ""
+                        index < navItems.length - 1 ? "" : "border-r-0"
                       } LinkWithBorder`}
                       style={{
                         cursor: "pointer",
