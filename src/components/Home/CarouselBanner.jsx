@@ -118,8 +118,6 @@ const CarouselBanner = () => {
             donate blood you have to be more than 16 years old.
           </p>
         </div>
-
-        <div className="h-40"></div>
       </div>
     </div>
   );
