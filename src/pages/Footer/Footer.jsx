@@ -10,7 +10,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="mt-2">
+    <div className="">
       <div className="bg-[#E11B22] text-left ml-auto mr-auto text-white max-w-[1536px]">
         <div className="p-10 bg-[#E11B22] ">
           <div className="max-w-7xl mx-auto">

@@ -8,15 +8,8 @@ const Home = () => {
     <div className="">
       <div><Navbar/></div>
      <div className=""> <CarouselBanner/></div>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
+
+   
      <div className=""> <Footer/></div>
     </div>
   );
