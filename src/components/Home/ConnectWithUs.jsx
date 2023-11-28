@@ -30,49 +30,55 @@ const ConnectWithUs = () => {
   ];
 
   return (
-    <div className="md:px-14 px-4 mx-auto -mt-[50px]">
+    <div className="md:px-14 px-4 mx-auto mt-4">
       {/* Services Card */}
-      <div
-        className="mt-20 md:w-1/2 mx-auto text-center"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <img src={charm_quote} alt="charm_quote" className="w-10 h-10" />
-        <h2
-          className="text-4xl text-neutralDGrey font-semibold mb-3 mt-3"
-          style={{
-            fontFamily: "Poppins",
-            fontSize: "34px",
-            fontStyle: "normal",
-            fontWeight: 700,
-            lineHeight: "normal",
-            textTransform: "capitalize",
-          }}
-        >
-          The gift of blood is a gift <br /> to someone's life”
-        </h2>
-        <p
-          className="text-brandPrimary"
-          style={{
-            fontFamily: "Poppins",
-            fontSize: "24px",
-            fontStyle: "normal",
-            fontWeight: 700,
-            lineHeight: "normal",
-            textTransform: "capitalize",
-          }}
-        >
-          Jhon Doe
-        </p>
+      <div>
+        <div>
+          <div
+            className="md:w-1/2 mx-auto text-center"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <img src={charm_quote} alt="charm_quote" className="w-10 h-10" />
+            <h2
+              className="text-4xl text-neutralDGrey font-semibold mb-3 mt-3"
+              style={{
+                fontFamily: "Poppins",
+                fontSize: "34px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "normal",
+                textTransform: "capitalize",
+              }}
+            >
+              The gift of blood is a gift <br /> to someone's life”
+            </h2>
+            <p
+              className="text-brandPrimary"
+              style={{
+                fontFamily: "Poppins",
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 700,
+                lineHeight: "normal",
+                textTransform: "capitalize",
+              }}
+            >
+              Jhon Doe
+            </p>
+          </div>
+        </div>
 
         <div>
           <div className="flex">
             <div>
               <img src={Rectangle} alt="" />
-              <p className="-mt-11 font-bold text-brandPrimary text-[14px]">Connect With Us</p>
+              <p className="-mt-11 ml-4 font-bold text-brandPrimary text-[14px]">
+                Connect With Us
+              </p>
             </div>
             <div className="mt-1">
               <img src={callRedIco} alt="" className="w-10 h-10" />
