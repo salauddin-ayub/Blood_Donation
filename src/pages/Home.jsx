@@ -5,8 +5,8 @@ import CarouselBanner from "../components/Home/CarouselBanner";
 const Home = () => {
   return (
     <div className="">
-      <Navbar/>
-      <CarouselBanner/>
+      <div><Navbar/></div>
+     <div className=""> <CarouselBanner/></div>
     </div>
   );
 };
