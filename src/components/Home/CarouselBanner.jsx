@@ -88,6 +88,9 @@ const CarouselBanner = () => {
             </Carousel>
           </div>
           {/* end */}
+          {/* <div className="">
+            <img src={iconPlay} alt="" />
+          </div> */}
         </div>
       </div>
 
