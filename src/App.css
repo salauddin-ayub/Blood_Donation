@@ -22,3 +22,29 @@ header{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  /* Individual border on hover */
+.LinkWithBorder:hover {
+    border-bottom: 4px solid;
+  }
+
+
+.zindexnav{
+    z-index: 1000000 !important;
+}
+.zindex{
+    z-index: 100 !important;
+}
+
+@keyframes scrollText {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
