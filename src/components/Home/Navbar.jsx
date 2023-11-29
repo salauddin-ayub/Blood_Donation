@@ -46,11 +46,12 @@ const Navbar = () => {
   ];
   return (
     <div className="w-full h-20 bg-white md:bg-transparent fixed top-0 left-0 right-0">
+      {/* start */}
       <div
         className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-10 ${
           isSticky
             ? "sticky top-0 left-0 right-0 border bg-[#242424] duration-300"
-            : ""
+            : "bg-[#242424]"
         }`}
       >
         <div className="col-span-9">
@@ -58,7 +59,7 @@ const Navbar = () => {
             className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-10 ${
               isSticky
                 ? "sticky top-0 left-0 right-0 border bg-[#242424] duration-300"
-                : ""
+                : "bg-[#242424]"
             }`}
           >
             <div
@@ -121,32 +122,33 @@ const Navbar = () => {
               lineHeight: "normal",
             }}
           >
-            <a href="#">
+            <a href="/">
               <img src={facebook} alt="Facebook" />
             </a>
-            <a href="#">
+            <a href="/">
               <img src={twitter} alt="Twitter" />
             </a>
-            <a href="#">
+            <a href="/">
               <img src={instagram} alt="Instagram" />
             </a>
-            <a href="#">
+            <a href="/">
               <img src={pinterest} alt="Printerest" />
             </a>
           </div>
         </div>
       </div>
 
-      <header className="">
+      {/* Navbar */}
+      <header className="z-300000">
         <nav
-          className={`py-4 lg:px-14 px-14 h-20 ${
+          className={`py-4 lg:px-14 px-14 h-[70px] ${
             isSticky
-              ? "sticky top-0 left-0 right-0 border bg-white duration-300"
-              : ""
+              ? "sticky top-0 left-0 right-0 border bg-white duration-300 h-[70px]"
+              : "h-[70px]"
           }`}
         >
           <div className="flex justify-between items-center text-base gap-8">
-            <div className=" border-[1px] border-black p-1 -mt-1">
+            <div className=" border-[1px] border-black p-1 -mt-[6px] ">
               <a
                 href="/"
                 className="text-2xl font-semibold flex items-center space-x-3"
@@ -174,8 +176,9 @@ const Navbar = () => {
                   className={`block text-gray90 hover:text-brandPrimary first:font-medium ${
                     index < navItems.length - 1
                       ? "border-r border-[#44444480] pr-8"
-                      : ""
+                      : "pr-2"
                   }`}
+                  style={{ cursor: "pointer" }}
                 >
                   {link}
                 </Link>

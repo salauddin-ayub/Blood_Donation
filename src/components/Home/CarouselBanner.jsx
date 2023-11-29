@@ -7,7 +7,7 @@ import { Carousel } from "flowbite-react";
 
 const CarouselBanner = () => {
   return (
-    <div className="h-96 mt-16 w-full">
+    <div className="h-96  lg:mt-40 w-full">
       <div
         className="pt-0"
         style={{
@@ -19,23 +19,77 @@ const CarouselBanner = () => {
       >
         <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
           <Carousel className="w-full mx-auto">
-            <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+            <div
+              className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12"
+              style={{
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                lineHeight: "normal",
+                textTransform: "capitalize"
+              }}
+            >
               <div>{/* <img src={banner} alt="banner1" /> */}</div>
-              {/* Here Text */}
-              {/* <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-[#0F046C] md:w-3/4 leading-snug">
-                Lessons and insights{" "}
-                <span className="text-[#91B3FA] leading-snug">from 8 yars</span>
-              </h1>
-              <p className="text-neutralGrey text-base mb-8">
-                Where to grow bussiness as a photographer: site or social media!
-              </p>
-              <button className="bg-[#0F046C] hover:bg-[#0F046C] hover:text-white btn-primary font-semibold text-white">
-                Register
-              </button>
-            </div> */}
+              <div className="md:w-1/2">
+                <h1
+                  className="text-5xl font-semibold mb-4 text-white md:w-3/4 leading-snug"
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: 700,
+                  }}
+                >
+                  The gift of blood is a gift to someone's life
+                </h1>
+                <p
+                  className="text-white text-base mb-8"
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: 400,
+                  }}
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.“
+                </p>
+              </div>
+            </div>
+            {/* end */}
+            <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+              <div>{/* <img src={banner2} alt="banner1" /> */}</div>
+              <div
+                className="md:w-1/2"
+                style={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  lineHeight: "normal",
+                }}
+              >
+                <h1
+                  className="text-5xl font-semibold mb-4 text-white md:w-3/4 leading-snug"
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: 700,
+                  }}
+                >
+                  The gift of blood is a gift to someone's life
+                </h1>
+                <p
+                  className="text-white text-base mb-8"
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: 400,
+                  }}
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry
+                </p>
+              </div>
             </div>
           </Carousel>
+          {/* start */}
+          <div className="h-40"></div>
+          {/* end */}
         </div>
       </div>
     </div>
