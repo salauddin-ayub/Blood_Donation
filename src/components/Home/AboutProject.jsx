@@ -3,7 +3,7 @@ import { IoCallOutline, IoMedicalOutline } from "react-icons/io5";
 
 export default function AboutProject() {
   return (
-    <div className="mt-80">
+    <div className="">
       <br></br>
       <div className="flex justify-end mt-4 text-xl font-semibold">
         <div className="">
