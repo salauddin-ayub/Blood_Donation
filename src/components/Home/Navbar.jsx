@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
 import navEarthLogo from "../../assets/icons/navEarthLogo.png";
+import navEarthLogoWhite from "../../assets/icons/navEarthLogoWhite.png";
 import { Link } from "react-scroll";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import gg_phone from "../../assets/icons/gg_phone.png";
@@ -14,6 +15,8 @@ import pinterest from "../../assets/icons/bi_pinterest.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  const [isHovered, setIsHovered] = useState(false); //On Hover Change Image
 
   //set toggle Menu
   const toggleMenu = () => {
@@ -222,11 +225,23 @@ const Navbar = () => {
               {/* button's for large devices */}
 
               <div className="space-x-6 hidden lg:flex items-center">
-                <div className="rounded-full hover:bg-red-100 p-1">
+                {/* <div className="rounded-full hover:bg-red-100 p-1">
                   <img
                     src={navEarthLogo}
                     alt="logo"
                     className="w-6 inline-block items-center"
+                  />
+                </div> */}
+
+                <div
+                  className="rounded-full hover:bg-brandPrimary p-1"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <img
+                    src={isHovered ? navEarthLogoWhite : navEarthLogo}
+                    alt="logo"
+                    className="w-6 inline-block items-center rounded-full"
                   />
                 </div>
                 <div>

@@ -1,33 +1,73 @@
 import React from "react";
-import { IoCallOutline, IoMedicalOutline } from "react-icons/io5";
+import { IoCallOutline } from "react-icons/io5";
+import charm_quote from "../../assets/charm_quote.png";
+import callRedIco from "../../assets/callRedIco.png";
+import Rectangle from "../../assets/Rectangle.png";
 
 export default function AboutProject() {
   return (
     <div className="">
-      <br></br>
       <div className="flex justify-end mt-4 text-xl font-semibold">
-        <div className="">
-          <p
-            className="text-brandPrimary border-2 border-red-500 rounded-full px-4 py-2 shadow-md text-sm"
-          >
-            Contact with Us
-          </p>
-        </div>
-        <div className=" ml-2 mr-4">
-          <div className="rounded-full border border-brandPrimary border-rounded p-2 bg-brandPrimary text-white">
-            <IoCallOutline className="text-xl" />
+        <img src={Rectangle} alt="" />
+        <p className="-ml-[140px] mt-[10px] font-bold text-brandPrimary text-[14px]">
+          Connect With Us
+        </p>
+        <div className="mt-1 ml-6 mr-4">
+          <div className="rounded-full text-white">
+            <div className="">
+              <img src={callRedIco} alt="" className="w-[40px] h-[40px]" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center mt-4 text-xl font-semibold">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <img src={charm_quote} alt="charm_quote" className="w-10 h-10" />
+      </div>
+      <div
+        className="flex justify-center mt-4 text-xl font-semibold"
+        style={{
+          fontFamily: "Poppins",
+          fontSize: "34px",
+          fontStyle: "normal",
+          fontWeight: 700,
+          lineHeight: "normal",
+          textTransform: "capitalize",
+        }}
+      >
         The gift of blood is a gift
       </div>
 
-      <div className="flex justify-center text-xl font-semibold">
+      <div
+        className="flex justify-center text-xl font-semibold"
+        style={{
+          fontFamily: "Poppins",
+          fontSize: "34px",
+          fontStyle: "normal",
+          fontWeight: 700,
+          lineHeight: "normal",
+          textTransform: "capitalize",
+        }}
+      >
         to someone's life”
       </div>
-      <div className="flex justify-center text-l text-brandPrimary font-semibold">
+      <div
+        className="flex justify-center text-brandPrimary mt-2"
+        style={{
+          fontFamily: "Poppins",
+          fontSize: "24px",
+          fontStyle: "normal",
+          fontWeight: 700,
+          lineHeight: "normal",
+          textTransform: "capitalize",
+        }}
+      >
         John Doe
       </div>
       <div className="flex justify-center mt-12  space-x-8">

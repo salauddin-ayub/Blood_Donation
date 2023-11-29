@@ -88,7 +88,7 @@ const ConnectWithUs = () => {
       </div>
 
       {/* Cards */}
-      {/* <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
+      <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
         {services.map((service) => (
           <div
             key={service.id}
@@ -107,7 +107,7 @@ const ConnectWithUs = () => {
             <p className="text-sm text-neutralGrey">{service.description}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className="h-40"></div>
     </div>
