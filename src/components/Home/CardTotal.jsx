@@ -18,7 +18,7 @@ export default function CardTotal() {
 
   return (
     <div
-      className="bg-cover bg-center text-white h-48 relative mt-4 mb-4 overflow-hidden" // Adjust the height (h-48) as needed
+      className="bg-cover bg-center text-white h-48 relative mt-20 mb-4 overflow-hidden" // Adjust the height (h-48) as needed
       style={cardTotalStyle}
     >
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:mx-8 items-center mt-2">

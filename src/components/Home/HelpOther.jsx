@@ -80,7 +80,8 @@ const HelpOther = () => {
         <div className="flex justify-center h-[455px] overflow-hidden">
           <div className="relative border border-black flex flex-col bg-white shadow-md rounded-2xl w-full">
             <div className="m-4">
-              <div className="flex">
+              {/* start */}
+              <div className="flex mt-[10px]">
                 <div>
                   <div
                     className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-[10px] border-[#EA5F64] bg-brandPrimary"
@@ -98,35 +99,156 @@ const HelpOther = () => {
                   </div>
                 </div>
                 {/* gelo */}
-                <div className="flex flex-col w-[500px] border-[1px] border-brandPrimary ml-8">
-                  <h2
-                    className=" align-end text-xs font-semibold"
-                    type="button"
-                    data-ripple-light="true"
-                  >
-                    Become a Blood Donor &#8594;
-                  </h2>
+                <div className="flex flex-col w-[500px] ml-8 justify-center">
+
+                  <div className="flex items-center space-x-[284px]">
+                    <h2
+                      className="font-semibold"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "18px",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        textTransform: "capitalize",
+                      }}
+                    >
+                       Become a Blood Donor
+                    </h2>
+                    <span className="text-brandPrimary font-bold">&#8594;</span>
+                  </div>
+
                   <div className="mt-3">
-                  <p
-                    className="text-justify"
-                    style={{
-                      fontFamily: "Poppins",
-                      fontSize: "13px",
-                      fontStyle: "normal",
-                      fontWeight: 500,
-                      lineHeight: "normal",
-                      textTransform: "capitalize",
-                    }}
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry
-                    standard dummy Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry.
-                  </p>
+                    <p
+                      className="text-justify"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "13px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "normal",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry
+                      standard dummy Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
                   </div>
                 </div>
               </div>
               {/* end */}
+              <div className="flex mt-[50px]">
+                <div>
+                  <div
+                    className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-[10px] border-[#EA5F64] bg-brandPrimary"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={HelpObject2}
+                      alt="HelpObject1"
+                      className="w-[40px] h-[40px] p-1  object-cover"
+                    />
+                  </div>
+                </div>
+                {/* gelo 2*/}
+                <div className="flex flex-col w-[500px] ml-8 justify-center">
+                  <div className="flex items-center space-x-[308px]">
+                    <h2
+                      className="font-semibold"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "18px",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Become a Volunteer
+                    </h2>
+                    <span className="text-brandPrimary font-bold">&#8594;</span>
+                  </div>
+
+                  <div className="mt-3">
+                    <p
+                      className="text-justify"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "13px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "normal",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry
+                      standard dummy Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* end */}
+              <div className="flex mt-[50px]">
+                <div>
+                  <div
+                    className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-[10px] border-[#EA5F64] bg-brandPrimary"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={HelpObject3}
+                      alt="HelpObject3"
+                      className="w-[40px] h-[40px] p-1  object-cover"
+                    />
+                  </div>
+                </div>
+                {/* gelo 3*/}
+                <div className="flex flex-col w-[500px] ml-8 justify-center">
+                  <div className="flex items-center space-x-[328px]">
+                    <h2
+                      className="font-semibold"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "18px",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Make A Donation
+                    </h2>
+                    <span className="text-brandPrimary font-bold">&#8594;</span>
+                  </div>
+
+                  <div className="mt-3">
+                    <p
+                      className="text-justify"
+                      style={{
+                        fontFamily: "Poppins",
+                        fontSize: "13px",
+                        fontStyle: "normal",
+                        fontWeight: 500,
+                        lineHeight: "normal",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry
+                      standard dummy Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </div>
               {/* end */}
             </div>
           </div>
