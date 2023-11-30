@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Home/Navbar";
 import CarouselBanner from "../components/Home/CarouselBanner";
 import AboutProject from "../components/Home/AboutProject";
-import ConnectWithUs from "../components/Home/ConnectWithUs";
 import Footer from "../components/Home/Footer";
+import HelpOther from "../components/Home/HelpOther";
 
 const Home = () => {
   return (
@@ -19,7 +19,11 @@ const Home = () => {
         {" "}
         <AboutProject />
       </div>
-      {/* <div><ConnectWithUs/></div> */}
+
+      <div className="">
+        {" "}
+        <HelpOther />
+      </div>
 
       <div className="">
         {" "}

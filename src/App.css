@@ -30,7 +30,7 @@ header{
 
 
 .zindexnav{
-    z-index: 1000000 !important;
+    z-index: 1000 !important;
 }
 .zindex{
     z-index: 100 !important;
