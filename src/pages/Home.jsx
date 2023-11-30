@@ -3,7 +3,8 @@ import Navbar from "../components/Home/Navbar";
 import CarouselBanner from "../components/Home/CarouselBanner";
 import AboutProject from "../components/Home/AboutProject";
 import ConnectWithUs from "../components/Home/ConnectWithUs";
-import Footer from "./Footer/Footer";
+import Footer from "../components/Home/Footer";
+// import Footer from "./Footer/Footer";
 import CardTotal from "../components/Home/CardTotal";
 
 const Home = () => {
@@ -16,8 +17,10 @@ const Home = () => {
      
      {/* <div><ConnectWithUs/></div> */}
 
-   
-     <div className=""> <Footer/></div>
+      <div className="">
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 };
