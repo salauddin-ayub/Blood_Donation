@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../components/Home/Navbar";
 import CarouselBanner from "../components/Home/CarouselBanner";
 import AboutProject from "../components/Home/AboutProject";
-import ConnectWithUs from "../components/Home/ConnectWithUs";
 import Footer from "../components/Home/Footer";
 // import Footer from "./Footer/Footer";
 import CardTotal from "../components/Home/CardTotal";
+import HelpOther from "../components/Home/HelpOther";
 
 const Home = () => {
   return (
@@ -15,7 +15,12 @@ const Home = () => {
      <div className=""> <AboutProject/></div>
      <div className=""> <CardTotal/></div>
      
-     {/* <div><ConnectWithUs/></div> */}
+    
+
+      <div className="">
+        {" "}
+        <HelpOther />
+      </div>
 
       <div className="">
         {" "}

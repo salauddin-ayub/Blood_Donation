@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import charm_quote from "../../assets/charm_quote.png";
-import callRedIco from "../../assets/callRedIco.png";
+import callRedIco from "../../assets/icons/callRedIco.png";
 import Rectangle from "../../assets/Rectangle.png";
 
 const ConnectWithUs = () => {
@@ -32,7 +32,7 @@ const ConnectWithUs = () => {
   return (
     <div className="md:px-14 px-4 mx-auto mt-4">
       {/* Services Card */}
-      <div>
+      {/* <div>
         <div>
           <div
             className="md:w-1/2 mx-auto text-center"
@@ -85,7 +85,7 @@ const ConnectWithUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Cards */}
       <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">

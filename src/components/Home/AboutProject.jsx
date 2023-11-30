@@ -1,8 +1,12 @@
 import React from "react";
-import { IoCallOutline } from "react-icons/io5";
-import charm_quote from "../../assets/charm_quote.png";
-import callRedIco from "../../assets/callRedIco.png";
-import Rectangle from "../../assets/Rectangle.png";
+import charm_quote from "../../assets/icons/charm_quote.png";
+import callRedIco from "../../assets/icons/callRedIco.png";
+import Rectangle from "../../assets/icons/Rectangle.png";
+import RectangleImage from "../../assets/RectangleImage.png";
+import GroupHand from "../../assets/icons/GroupHand.png";
+import Discussion from "../../assets/icons/Discussion.png";
+import emojion_handshake from "../../assets/icons/emojion_handshake.png";
+import maki_arrow from "../../assets/icons/maki_arrow.png";
 
 export default function AboutProject() {
   return (
@@ -70,41 +74,266 @@ export default function AboutProject() {
       >
         John Doe
       </div>
-      <div className="flex justify-center mt-12  space-x-8">
-        {[1, 2, 3].map((index) => (
-          <div
-            key={index}
-            className="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl border border-pink-300"
-          >
+
+      {/* About */}
+      <div className="gap-24 h-[550px] mt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto ">
+        <div className="flex justify-center mt-20 space-x-8 hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary hover:rounded-xl  transition-all duration-300">
+          <div className="relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl border border-pink-300 w-[400px]">
             <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
               <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                src={RectangleImage}
                 alt="img-blur-shadow"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                UI/UX Review Check
+
+            <div
+              className="w-full -mt-[40px] zindex"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                className="w-[70px] h-[70px] flex items-center justify-center rounded-full border-[2px] border-brandPrimary bg-white"
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  src={GroupHand}
+                  alt="GroupHand"
+                  className="w-[40px] h-[40px] p-1"
+                />
+              </div>
+            </div>
+
+            <div className="p-6 -mt-2">
+              <h5
+                className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                Am I Eligible To Donate Blood?
               </h5>
-              <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                The place is close to Barceloneta Beach and bus stop just 2 min
-                by walk and near to "Naviglio" where you can enjoy the main
-                night life in Barcelona.
+              <p
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.“
               </p>
             </div>
-            <div className="p-6 pt-0">
-              <button
-                className="select-none rounded-lg bg-brandPrimary hover:bg-transparent hover:border-brandPrimary hover:text-brandPrimary py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                type="button"
-                data-ripple-light="true"
-              >
-                Read More
-              </button>
+
+            <div
+              className="justify-end mt-4"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "end",
+              }}
+            >
+              <div className="flex">
+                <button
+                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-light="true"
+                >
+                  Learn more
+                </button>
+
+                <div className="mt-[16px] mr-[10px] -ml-[16px]">
+                  <img
+                    src={maki_arrow}
+                    alt="maki_arrow"
+                    className="w-[12px] h-[8px]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        ))}
+        </div>
+        {/* end */}
+        <div className="flex justify-center mt-20 space-x-8 hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary hover:rounded-xl  transition-all duration-300">
+          <div className="relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl border border-pink-300 w-[400px]">
+            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+              <img
+                src={RectangleImage}
+                alt="img-blur-shadow"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              className="w-full -mt-[40px] zindex"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                className="w-[70px] h-[70px] flex items-center justify-center rounded-full border-[2px] border-brandPrimary bg-white"
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  src={emojion_handshake}
+                  alt="emojion_handshake"
+                  className="w-[40px] h-[40px] p-1"
+                />
+              </div>
+            </div>
+
+            <div className="p-6 -mt-2">
+              <h5
+                className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                How The Donation Helps
+              </h5>
+              <p
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.“
+              </p>
+            </div>
+
+            <div
+              className="justify-end mt-4"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "end",
+              }}
+            >
+              <div className="flex">
+                <button
+                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-light="true"
+                >
+                  Learn more
+                </button>
+
+                <div className="mt-[16px] mr-[10px] -ml-[16px]">
+                  <img
+                    src={maki_arrow}
+                    alt="maki_arrow"
+                    className="w-[12px] h-[8px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end */}
+        <div className="flex justify-center mt-20 space-x-8 hover:-translate-y-5 hover:border-b-4 hover:border-brandPrimary hover:rounded-xl  transition-all duration-300">
+          <div className="relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl border border-pink-300 w-[400px]">
+            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+              <img
+                src={RectangleImage}
+                alt="img-blur-shadow"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              className="w-full -mt-[40px] zindex"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                className="w-[70px] h-[70px] flex items-center justify-center rounded-full border-[2px] border-brandPrimary bg-white"
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  src={Discussion}
+                  alt="Discussion"
+                  className="w-[40px] h-[40px] p-1"
+                />
+              </div>
+            </div>
+
+            <div className="p-6 -mt-2">
+              <h5
+                className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                About Blood
+              </h5>
+              <p
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                style={{
+                  fontFamily: "Poppins",
+                }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.“
+              </p>
+            </div>
+
+            <div
+              className="justify-end mt-4"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "end",
+              }}
+            >
+              <div className="flex">
+                <button
+                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-light="true"
+                >
+                  Learn more
+                </button>
+
+                <div className="mt-[16px] mr-[10px] -ml-[16px]">
+                  <img
+                    src={maki_arrow}
+                    alt="maki_arrow"
+                    className="w-[12px] h-[8px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end */}
       </div>
+      {/* end */}
     </div>
   );
 }
