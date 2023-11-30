@@ -4,6 +4,7 @@ import CarouselBanner from "../components/Home/CarouselBanner";
 import AboutProject from "../components/Home/AboutProject";
 import ConnectWithUs from "../components/Home/ConnectWithUs";
 import Footer from "./Footer/Footer";
+import CardTotal from "../components/Home/CardTotal";
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
       <div><Navbar/></div>
      <div className=""> <CarouselBanner/></div>
      <div className=""> <AboutProject/></div>
+     <div className=""> <CardTotal/></div>
+     
      {/* <div><ConnectWithUs/></div> */}
 
    
