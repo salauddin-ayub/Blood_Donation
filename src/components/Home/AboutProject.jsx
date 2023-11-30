@@ -38,7 +38,7 @@ export default function AboutProject() {
         className="flex justify-center mt-4 text-xl font-semibold"
         style={{
           fontFamily: "Poppins",
-          fontSize: "34px",
+          fontSize: "30px",
           fontStyle: "normal",
           fontWeight: 700,
           lineHeight: "normal",
@@ -52,7 +52,7 @@ export default function AboutProject() {
         className="flex justify-center text-xl font-semibold"
         style={{
           fontFamily: "Poppins",
-          fontSize: "34px",
+          fontSize: "30px",
           fontStyle: "normal",
           fontWeight: 700,
           lineHeight: "normal",
