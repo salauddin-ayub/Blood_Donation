@@ -121,7 +121,7 @@ export default function AboutProject() {
                 Am I Eligible To Donate Blood?
               </h5>
               <p
-                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4 text-justify"
                 style={{
                   fontFamily: "Poppins",
                 }}
@@ -141,23 +141,15 @@ export default function AboutProject() {
                 alignItems: "end",
               }}
             >
-              <div className="flex">
-                <button
-                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                  data-ripple-light="true"
-                >
-                  Learn more
-                </button>
-
-                <div className="mt-[16px] mr-[10px] -ml-[16px]">
-                  <img
-                    src={maki_arrow}
-                    alt="maki_arrow"
-                    className="w-[12px] h-[8px]"
-                  />
+               <div className="flex p-4">
+                  <button
+                    className="text-right align-end text-xs text-brandPrimary ml-6 font-semibold"
+                    type="button"
+                    data-ripple-light="true"
+                  >
+                    Learn more &#8594;
+                  </button>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -206,7 +198,7 @@ export default function AboutProject() {
                 How The Donation Helps
               </h5>
               <p
-                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4 text-justify"
                 style={{
                   fontFamily: "Poppins",
                 }}
@@ -226,23 +218,15 @@ export default function AboutProject() {
                 alignItems: "end",
               }}
             >
-              <div className="flex">
-                <button
-                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                  data-ripple-light="true"
-                >
-                  Learn more
-                </button>
-
-                <div className="mt-[16px] mr-[10px] -ml-[16px]">
-                  <img
-                    src={maki_arrow}
-                    alt="maki_arrow"
-                    className="w-[12px] h-[8px]"
-                  />
+               <div className="flex p-4">
+                  <button
+                    className="text-right align-end text-xs text-brandPrimary ml-6 font-semibold"
+                    type="button"
+                    data-ripple-light="true"
+                  >
+                    Learn more &#8594;
+                  </button>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -291,7 +275,7 @@ export default function AboutProject() {
                 About Blood
               </h5>
               <p
-                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4"
+                className="block font-sans text-base antialiased font-light leading-relaxed text-inherit text- mt-4 text-justify"
                 style={{
                   fontFamily: "Poppins",
                 }}
@@ -311,23 +295,15 @@ export default function AboutProject() {
                 alignItems: "end",
               }}
             >
-              <div className="flex">
-                <button
-                  className="select-none py-3 px-6 text-center align-end text-xs text-brandPrimary focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                  data-ripple-light="true"
-                >
-                  Learn more
-                </button>
-
-                <div className="mt-[16px] mr-[10px] -ml-[16px]">
-                  <img
-                    src={maki_arrow}
-                    alt="maki_arrow"
-                    className="w-[12px] h-[8px]"
-                  />
+               <div className="flex p-4">
+                  <button
+                    className="text-right align-end text-xs text-brandPrimary ml-6 font-semibold"
+                    type="button"
+                    data-ripple-light="true"
+                  >
+                    Learn more &#8594;
+                  </button>
                 </div>
-              </div>
             </div>
           </div>
         </div>

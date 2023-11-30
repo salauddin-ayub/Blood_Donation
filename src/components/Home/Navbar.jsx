@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
-import navEarthLogo from "../../assets/icons/navEarthLogo.png";
 import navEarthLogoWhite from "../../assets/icons/navEarthLogoWhite.png";
-import { Link } from "react-scroll";
-import { FaXmark, FaBars } from "react-icons/fa6";
-import gg_phone from "../../assets/icons/gg_phone.png";
-import mdi_email from "../../assets/icons/mdi_email-fast-outline.png";
 import ion_location from "../../assets/icons/ion_location-outline.png";
-import facebook from "../../assets/icons/bi_facebook.png";
-import twitter from "../../assets/icons/formkit_twitter.png";
+import mdi_email from "../../assets/icons/mdi_email-fast-outline.png";
+import navEarthLogo from "../../assets/icons/navEarthLogo.png";
 import instagram from "../../assets/icons/ei_sc-instagram.png";
+import twitter from "../../assets/icons/formkit_twitter.png";
 import pinterest from "../../assets/icons/bi_pinterest.png";
+import facebook from "../../assets/icons/bi_facebook.png";
+import gg_phone from "../../assets/icons/gg_phone.png";
+import React, { useState, useEffect } from "react";
+import { FaXmark, FaBars } from "react-icons/fa6";
+import logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
