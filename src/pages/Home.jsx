@@ -5,6 +5,7 @@ import AboutProject from "../components/Home/AboutProject";
 import Footer from "../components/Home/Footer";
 import CardTotal from "../components/Home/CardTotal";
 import HelpOther from "../components/Home/HelpOther";
+import TotalSection from "../components/Home/TotalSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,14 @@ const Home = () => {
      <div className=""><CarouselBanner/></div>
      <div className=""><AboutProject/></div>
      <div className=""><CardTotal/></div>
+     <div className=""> <CarouselBanner/></div>
+     <div className=""> <AboutProject/></div>
+     {/* <div className=""> <CardTotal/></div> */}
+     <div className=""> <TotalSection/></div>
+
+     
+    
+
       <div className="">
         <HelpOther />
       </div>

@@ -8,7 +8,7 @@ const CarouselBanner = () => {
     <div>
       <div className="w-full pt-[52px] bg-white">
         <div
-          className="pt-0 h-[605px]"
+          className="pt-0 h-[605px] object-fit"
           style={{
             backgroundImage: `url(${carouselBanner})`,
             backgroundSize: "auto",
