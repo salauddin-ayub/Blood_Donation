@@ -6,7 +6,6 @@ import RectangleImage from "../../assets/RectangleImage.png";
 import GroupHand from "../../assets/icons/GroupHand.png";
 import Discussion from "../../assets/icons/Discussion.png";
 import emojion_handshake from "../../assets/icons/emojion_handshake.png";
-import maki_arrow from "../../assets/icons/maki_arrow.png";
 
 export default function AboutProject() {
   return (

@@ -11,7 +11,7 @@ import maki_arrow from "../../assets/icons/maki_arrow.png";
 
 const HelpOther = () => {
   return (
-    <div className="h-[450px] mt-28 mb-40">
+    <div className="h-[450px] mt-20 mb-40">
       <div>
         <h2
           className=" text-center"
@@ -27,7 +27,7 @@ const HelpOther = () => {
           Making your ways to help others
         </h2>
       </div>
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto pl-12 pr-12 mt-8 gap-2">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto pl-12 pr-12 mt-8 gap-8">
         {/* start */}
         <div className="flex justify-center h-[455px] overflow-hidden">
           <div className="relative flex flex-col bg-[#F3A4A7] shadow-md rounded-2xl w-full">
@@ -78,7 +78,7 @@ const HelpOther = () => {
         {/* end */}
 
         <div className="flex justify-center h-[455px] overflow-hidden">
-          <div className="relative border border-black flex flex-col bg-white shadow-md rounded-2xl w-full">
+          <div className="relative flex flex-col bg-white shadow-md rounded-2xl w-full">
             <div className="m-4">
               {/* start */}
               <div className="flex mt-[10px]">
@@ -101,7 +101,7 @@ const HelpOther = () => {
                 {/* gelo */}
                 <div className="flex flex-col w-[500px] ml-8 justify-center">
 
-                  <div className="flex items-center space-x-[284px]">
+                  <div className="flex items-center space-x-[272px]">
                     <h2
                       className="font-semibold"
                       style={{
@@ -157,7 +157,7 @@ const HelpOther = () => {
                 </div>
                 {/* gelo 2*/}
                 <div className="flex flex-col w-[500px] ml-8 justify-center">
-                  <div className="flex items-center space-x-[308px]">
+                  <div className="flex items-center space-x-[295px]">
                     <h2
                       className="font-semibold"
                       style={{
@@ -213,7 +213,7 @@ const HelpOther = () => {
                 </div>
                 {/* gelo 3*/}
                 <div className="flex flex-col w-[500px] ml-8 justify-center">
-                  <div className="flex items-center space-x-[328px]">
+                  <div className="flex items-center space-x-[315px]">
                     <h2
                       className="font-semibold"
                       style={{
