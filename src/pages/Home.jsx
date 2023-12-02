@@ -7,6 +7,7 @@ import HelpOther from "../components/Home/HelpOther";
 import TotalSection from "../components/Home/TotalSection";
 import NeedHelpSection from "../components/Home/NeedHelpSection";
 import ContactUs from "../components/Home/ContactUs";
+import ClientsThink from "../components/Home/ClientsThink";
 
 const Home = () => {
   return (
@@ -16,9 +17,10 @@ const Home = () => {
      <div className=""><AboutProject/></div>
      <div className=""><TotalSection/></div>
      <div className=""><HelpOther /></div>
-     <div className="mt-[1500px]"><NeedHelpSection /></div>
-     {/* <div className="mt-12"><ContactUs /></div>
-     <div className=""><Footer /></div> */}
+     <div className=""><NeedHelpSection /></div>
+     <div className="mt-12"><ContactUs /></div>
+     <div className="mt-12"><ClientsThink /></div>
+     <div className=""><Footer /></div>
     </div>
   );
 };
