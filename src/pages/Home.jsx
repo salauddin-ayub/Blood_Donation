@@ -17,8 +17,14 @@ const Home = () => {
      <div className=""><TotalSection/></div>
      <div className=""><HelpOther /></div>
      <div className=""><NeedHelpSection /></div>
+     {/* <div className="">
+        <HelpOther />
+      </div> */}
+     <div className="">
+        <ContactUs />
+      </div>
      <div className=""><Footer /></div>
-      <div>
+      {/* <div>
         <Navbar />
       </div>
       <div className="">
@@ -42,7 +48,7 @@ const Home = () => {
       </div>
       <div className="">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };
