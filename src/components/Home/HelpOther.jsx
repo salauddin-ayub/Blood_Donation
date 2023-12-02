@@ -11,7 +11,7 @@ import maki_arrow from "../../assets/icons/maki_arrow.png";
 
 const HelpOther = () => {
   return (
-    <div className="h-[450px] mt-20 mb-40">
+    <div className="h-[450px] mt-20">
       <div>
         <h2
           className=" text-center"

@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="h-full ">
         {/* start */}
         <div
-          className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-8 ${
+          className={`hidden lg:grid lg:grid-cols-12  md:grid md:grid-cols-12 items-center bg-[#242424] h-8 ${
             isSticky
               ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
               : "bg-[#242424]"
@@ -60,7 +60,7 @@ const Navbar = () => {
         >
           <div className="col-span-9">
             <div
-              className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-8 ${
+              className={`hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-[#242424] h-8 ${
                 isSticky
                   ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
                   : "bg-[#242424]"
@@ -106,13 +106,13 @@ const Navbar = () => {
               >
                 <img src={ion_location} alt="" className="text-white w-4 h-4" />
                 <p className="ml-2">
-                  demo,demo,,demo,demo,demo,demo,,demo,demo
+                  demo,demo,,demo,demo,demo,demo
                 </p>
               </div>
             </div>
           </div>
           <div
-            className={`col-span-3 hidden lg:grid lg:grid-cols-12 items-center bg-brandPrimary h-8 ${
+            className={`col-span-3 hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-brandPrimary h-8 ${
               isSticky
                 ? "sticky top-0 left-0 right-0 bg-brandPrimary duration-300"
                 : ""
@@ -149,10 +149,10 @@ const Navbar = () => {
       <div>
         <header className="zindexnav h-[70px] bg-white">
           <nav
-            className={`lg:px-14 px-14 h-full ${
+            className={`lg:px-14 md:px-14 px-14 h-full ${
               isSticky
-                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary"
-                : ""
+                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary rounded-bl-lg"
+                : "border-b-2 border-brandPrimary"
             }`}
           >
             <div className="flex justify-between items-center text-base gap-8 h-full ">
@@ -210,12 +210,12 @@ const Navbar = () => {
                   ))}
                 </div>
 
-                <div className="hidden lg:flex items-center">
+                <div className="hidden lg:flex md:flex items-center">
                   <a
                     href="/"
-                    className="hidden lg:flex items-center hover:text-gray-900"
+                    className="hidden lg:flex md:flex items-center hover:text-gray-900"
                   >
-                    <button className=" bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-2 px-4 transition-all duration-300">
+                    <button className="bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-2 px-4 transition-all duration-300">
                       Search Donor
                     </button>
                   </a>
@@ -225,14 +225,6 @@ const Navbar = () => {
               {/* button's for large devices */}
 
               <div className="space-x-6 hidden lg:flex items-center">
-                {/* <div className="rounded-full hover:bg-red-100 p-1">
-                  <img
-                    src={navEarthLogo}
-                    alt="logo"
-                    className="w-6 inline-block items-center"
-                  />
-                </div> */}
-
                 <div
                   className="rounded-full hover:bg-brandPrimary p-1"
                   onMouseEnter={() => setIsHovered(true)}

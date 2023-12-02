@@ -13,7 +13,7 @@ const TotalSection = () => {
         backgroundImage: `url(${carouselBanner})`,
         backgroundSize: "auto",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "repeat",
       }}
     >
       {/* start */}
