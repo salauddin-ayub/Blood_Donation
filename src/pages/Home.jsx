@@ -6,6 +6,7 @@ import Footer from "../components/Home/Footer";
 import HelpOther from "../components/Home/HelpOther";
 import TotalSection from "../components/Home/TotalSection";
 import NeedHelpSection from "../components/Home/NeedHelpSection";
+import ContactUs from "../components/Home/ContactUs";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
      <div className=""><TotalSection/></div>
      {/* <div className=""><HelpOther /></div>
      <div className=""><NeedHelpSection /></div>
+     <div className=""><ContactUs /></div>
      <div className=""><Footer /></div> */}
     </div>
   );
