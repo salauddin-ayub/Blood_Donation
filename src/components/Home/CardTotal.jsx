@@ -1,8 +1,8 @@
 import React from "react";
 import cart from "../../assets/card.png";
-import bell from "../../assets/icons/bell.png";
+// import bell from "../../assets/icons/bell.png";
 import handshake from "../../assets/icons/handShake.png";
-import layer from "../../assets/icons/layer.png";
+// import layer from "../../assets/icons/layer.png";
 import users from "../../assets/icons/users.png";
 
 export default function CardTotal() {
@@ -22,7 +22,7 @@ export default function CardTotal() {
       style={cardTotalStyle}
     >
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:mx-8 items-center mt-8">
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <img
             src={layer}
             alt="Layer"
@@ -30,8 +30,8 @@ export default function CardTotal() {
           />
           <p className={textBelowStyle}>123 K</p>
           <p className={textBelow}>Total Donors</p>
-        </div>
-        <div className="flex flex-col items-center">
+        </div> */}
+        {/* <div className="flex flex-col items-center">
           <img
             src={bell}
             alt="Bell"
@@ -39,7 +39,7 @@ export default function CardTotal() {
           />
           <p className={textBelowStyle}>123 K</p>
           <p className={textBelow}>Blood Requests</p>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center">
           <img
             src={handshake}

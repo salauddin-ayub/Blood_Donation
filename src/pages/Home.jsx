@@ -17,6 +17,28 @@ const Home = () => {
      <div className=""><HelpOther /></div>
      <div className=""><NeedHelpSection /></div>
      <div className=""><Footer /></div>
+      <div>
+        <Navbar />
+      </div>
+      <div className="">
+        {" "}
+        <CarouselBanner />
+      </div>
+      <div className="">
+        {" "}
+        <AboutProject />
+      </div>
+      <div className="">
+        {" "}
+        <TotalSection />
+      </div>
+
+      <div className="">
+        <HelpOther />
+      </div>
+      <div className="">
+        <Footer />
+      </div>
     </div>
   );
 };
