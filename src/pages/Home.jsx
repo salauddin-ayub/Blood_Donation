@@ -18,41 +18,9 @@ const Home = () => {
      <div className=""><TotalSection/></div>
      <div className=""><HelpOther /></div>
      <div className=""><NeedHelpSection /></div>
-     {/* <div className="">
-        <HelpOther />
-      </div> */}
-     <div className="">
-        <ContactUs />
-      </div>
-     <div className="">
-        <ClientsThink />
-      </div>
+     <div className="mt-12"><ContactUs /></div>
+     <div className="mt-12"><ClientsThink /></div>
      <div className=""><Footer /></div>
-      {/* <div>
-        <Navbar />
-      </div>
-      <div className="">
-        {" "}
-        <CarouselBanner />
-      </div>
-      <div className="">
-        {" "}
-        <AboutProject />
-      </div>
-      <div className="">
-        {" "}
-        <TotalSection />
-      </div>
-
-      <div className="">
-        <HelpOther />
-      </div>
-      <div className="">
-        <ContactUs />
-      </div>
-      <div className="">
-        <Footer />
-      </div> */}
     </div>
   );
 };

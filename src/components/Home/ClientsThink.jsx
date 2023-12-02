@@ -43,7 +43,7 @@ export default function ClientsThink() {
             <img
               src={testimonials[activeIndex].imageSrc}
               alt={testimonials[activeIndex].clientName}
-              className="w-16 h-16 rounded-full"
+              className="w-32 h-32 rounded-full"
             />
           </div>
           <div className="flex flex-col">
