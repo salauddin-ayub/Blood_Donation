@@ -7,6 +7,7 @@ import HelpOther from "../components/Home/HelpOther";
 import TotalSection from "../components/Home/TotalSection";
 import NeedHelpSection from "../components/Home/NeedHelpSection";
 import ContactUs from "../components/Home/ContactUs";
+import ClientsThink from "../components/Home/ClientsThink";
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
       </div> */}
      <div className="">
         <ContactUs />
+      </div>
+     <div className="">
+        <ClientsThink />
       </div>
      <div className=""><Footer /></div>
       {/* <div>
