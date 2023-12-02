@@ -16,9 +16,9 @@ const Home = () => {
      <div className=""><AboutProject/></div>
      <div className=""><TotalSection/></div>
      <div className=""><HelpOther /></div>
-     <div className=""><NeedHelpSection /></div>
-     <div className="mt-12"><ContactUs /></div>
-     <div className=""><Footer /></div>
+     <div className="mt-[1500px]"><NeedHelpSection /></div>
+     {/* <div className="mt-12"><ContactUs /></div>
+     <div className=""><Footer /></div> */}
     </div>
   );
 };
