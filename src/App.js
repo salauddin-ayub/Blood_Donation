@@ -17,7 +17,7 @@ function App() {
       <Routes>
         {/* {token ? ( */}
           <Route path="/" element={<Home/>}>
-            {/* <Route index element={<Dashboard />} /> */}
+           
           </Route>
         {/* ) : (
           <Route path="/" element={<Navigate to="/login" />} />
