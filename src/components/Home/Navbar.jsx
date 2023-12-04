@@ -11,8 +11,14 @@ import React, { useState, useEffect } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+  
+  const navigate = useNavigate();
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -40,8 +46,13 @@ const Navbar = () => {
 
   //navItems array
   const navItems = [
-    { link: "Home", path: "home", id: 1},
-    { link: "About Us", path: "/about", id: 2,optionList:[{name:"About us", path:"/about-us"}]  },
+    { link: "Home", path: "/", id: 1 },
+    {
+      link: "About Us",
+      path: "/about",
+      id: 2,
+      optionList: [{ name: "About", path: "/about" }],
+    },
     { link: "Blood", path: "blood", id: 3 },
     { link: "Donor", path: "donor", id: 4 },
     { link: "Campaign", path: "campaign", id: 5 },
@@ -57,7 +68,7 @@ const Navbar = () => {
     setActiveModal(null);
   };
 
-  console.log("Active Modal",activeModal)
+  console.log("Active Modal", activeModal);
 
   return (
     <div className="w-full md:bg-transparent fixed top-0 left-0 right-0 inline-block zindexnav">
@@ -154,20 +165,22 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* Navbar */}
 
+      {/* Navbar START */}
       <div>
-        <header className="zindexnav h-[70px] bg-white">
+        <header className="zindexnav h-[60px] bg-white">
           <nav
             className={`lg:px-14 md:px-14 px-14 h-full ${
               isSticky
-                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary rounded-bl-lg"
-                : "border-b-2 border-brandPrimary"
+                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 rounded-bl-lg shadow-md"
+                : `border-b-2 border-brandPrimary ${
+                    activeModal ? "border-b-0" : ""
+                  }`
             }`}
           >
             <div className="flex justify-between items-center text-base gap-8 h-full ">
               <div
-                className="border-[1px] border-black h-[70px] pl-2 pr-2"
+                className="border-[1px] border-black h-full pl-2 pr-2"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -182,7 +195,7 @@ const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="w-16 h-16 inline-block items-center"
+                      className="w-12 h-12 inline-block items-center"
                     />
                   </div>
                   <span className="text-[#263238]">Demo</span>
@@ -190,21 +203,21 @@ const Navbar = () => {
               </div>
 
               {/* nav itmes for large devices */}
-              <ul className="md:flex space-x-6 hidden font-semibold">
-                <div className="flex justify-center items-center">
+              <ul className="md:flex hidden font-semibold h-full">
+                <div className="flex justify-center items-center cursor-pointer">
                   {navItems.map(({ id, link, path }, index) => (
                     <div
                       key={path}
-                      className="relative group"
+                      className="relative grouph-full"
                       onMouseEnter={() => openModal(id)}
-                      // onMouseLeave={closeModal}
+                      onMouseLeave={closeModal}
                     >
                       <Link
                         to={path}
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`block text-gray-900 hover:text-brandPrimary pl-4 pr-4 pt-4 pb-4 border-r ${
+                        className={`block text-gray-900 hover:text-brandPrimary px-4 py-5 border-r rounded-b-sm ${
                           index < navItems.length - 1 ? "" : "border-r-0"
                         } LinkWithBorder`}
                         style={{
@@ -217,36 +230,38 @@ const Navbar = () => {
                       </Link>
                       {/* Modal Start */}
                       {activeModal === id && (
-                        <div>
-                          {navItems?.[activeModal - 1]?.optionList && (
-                            <div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-2">
-                            <div className="bg-white p-8 max-w-md mx-auto rounded shadow-lg">
-                              <ul>
-                                {navItems?.[activeModal - 1]?.optionList?.map((val)=>(
-                                  <li>{val?.name}</li>
-  
-                                ))}
-                              </ul>
-                              {/* <button
-                                onClick={closeModal}
-                                className="mt-4 bg-brandPrimary text-white py-2 px-4 rounded"
-                              >
-                                Close
-                              </button> */}
-                            </div>
-                          </div>
-                          )}
-                        </div>
-                        
-                      )}
+        <div>
+          {navItems?.[activeModal - 1]?.optionList && (
+            <div
+              className={`absolute left-2/2 transform -translate-x-2/2 top-full`}
+              style={{ width: "calc(200% - 27px)" }}
+            >
+              <div className="bg-white max-w-md mx-auto rounded-b-sm py-4 pl-4 border border-t-0 shadow-xl">
+                <ul>
+                  {navItems?.[activeModal - 1]?.optionList?.map((val) => (
+                    <li key={val.path}>
+                      <button
+                        className="text-gray-900 hover:text-brandPrimary"
+                        onClick={() => {
+                          navigate(val.path);
+                          closeModal();
+                        }}
+                      >
+                        {val?.name}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
                       {/* Modal End */}
                     </div>
                   ))}
                 </div>
-
-                {/* ))} */}
-
-                {/* Modal */}
 
                 <div className="hidden lg:flex md:flex items-center">
                   <a
