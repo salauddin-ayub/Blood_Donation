@@ -17,10 +17,10 @@ const Home = () => {
      <div className=""><AboutProject/></div>
      <div className=""><TotalSection/></div>
      <div className=""><HelpOther /></div>
-     <div className=""><NeedHelpSection /></div>
-     <div className="mt-12"><ContactUs /></div>
-     <div className="mt-12"><ClientsThink /></div>
-     <div className=""><Footer /></div>
+     <div className="mb-[1000px]"><NeedHelpSection /></div>
+     {/* <div className="mt-12"><ContactUs /></div> */}
+     {/* <div className="mt-12"><ClientsThink /></div> */}
+     {/* <div className=""><Footer /></div> */}
     </div>
   );
 };
