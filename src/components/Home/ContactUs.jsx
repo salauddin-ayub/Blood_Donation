@@ -6,7 +6,7 @@ export default function ContactUs() {
     <div>
       <div className="grid grid-cols-2 lg:mr-40 md:mr-0 mr-40 lg:ml-20 md:ml-0 ml-20 rounded-md bg-white lg:mt-12 md:mt-12 mt-12 p-20 pt-0">
         {/* First Card */}
-        <div className="bg-white lg:ml-6 md:ml-0 ml-6 mt-2 mb-8 rounded col-span-1 border">
+        <div className="bg-white lg:ml-6 md:ml-0 ml-6 mt-2 mb-8 rounded col-span-1">
           <div className="lg:ml-24 md:ml-0 ml-24">
             <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-2 font-bold shadow-md">
               Contact Us
