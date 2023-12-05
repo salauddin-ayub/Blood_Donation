@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
-import navEarthLogo from "../../assets/icons/navEarthLogo.png";
-import { Link } from "react-scroll";
-import { FaXmark, FaBars } from "react-icons/fa6";
-import gg_phone from "../../assets/icons/gg_phone.png";
-import mdi_email from "../../assets/icons/mdi_email-fast-outline.png";
+import navEarthLogoWhite from "../../assets/icons/navEarthLogoWhite.png";
 import ion_location from "../../assets/icons/ion_location-outline.png";
-import facebook from "../../assets/icons/bi_facebook.png";
-import twitter from "../../assets/icons/formkit_twitter.png";
+import mdi_email from "../../assets/icons/mdi_email-fast-outline.png";
+import navEarthLogo from "../../assets/icons/navEarthLogo.png";
 import instagram from "../../assets/icons/ei_sc-instagram.png";
+import twitter from "../../assets/icons/formkit_twitter.png";
 import pinterest from "../../assets/icons/bi_pinterest.png";
+import facebook from "../../assets/icons/bi_facebook.png";
+import gg_phone from "../../assets/icons/gg_phone.png";
+import React, { useState, useEffect } from "react";
+import { FaXmark, FaBars } from "react-icons/fa6";
+import logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  const [isHovered, setIsHovered] = useState(false); //On Hover Change Image
 
   //set toggle Menu
   const toggleMenu = () => {
@@ -148,7 +151,7 @@ const Navbar = () => {
           <nav
             className={`lg:px-14 px-14 h-full ${
               isSticky
-                ? "sticky top-0 left-0 right-0 bg-[white] duration-300"
+                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary"
                 : ""
             }`}
           >
@@ -194,7 +197,7 @@ const Navbar = () => {
                       offset={-100}
                       key={path}
                       className={`block text-gray90 hover:text-brandPrimary pl-4 pr-4 pt-[26px] pb-[26px] border-r ${
-                        index < navItems.length - 1 ? "" : ""
+                        index < navItems.length - 1 ? "" : "border-r-0"
                       } LinkWithBorder`}
                       style={{
                         cursor: "pointer",
@@ -222,11 +225,23 @@ const Navbar = () => {
               {/* button's for large devices */}
 
               <div className="space-x-6 hidden lg:flex items-center">
-                <div className="rounded-full hover:bg-red-100 p-1">
+                {/* <div className="rounded-full hover:bg-red-100 p-1">
                   <img
                     src={navEarthLogo}
                     alt="logo"
                     className="w-6 inline-block items-center"
+                  />
+                </div> */}
+
+                <div
+                  className="rounded-full hover:bg-brandPrimary p-1"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <img
+                    src={isHovered ? navEarthLogoWhite : navEarthLogo}
+                    alt="logo"
+                    className="w-6 inline-block items-center rounded-full"
                   />
                 </div>
                 <div>

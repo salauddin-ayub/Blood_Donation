@@ -1,8 +1,6 @@
 import React from "react";
-import banner from "../../assets/banner.png";
-import banner1 from "../../assets/banner1.png";
-import banner2 from "../../assets/banner2.png";
-import carouselBanner from "../../assets/carouselBanner.png";
+import iconPlay from "../../assets/iconPlay.png";
+import carouselBanner from "../../assets/carouselBanner.jpg";
 import { Carousel } from "flowbite-react";
 
 const CarouselBanner = () => {
@@ -10,7 +8,7 @@ const CarouselBanner = () => {
     <div>
       <div className="w-full pt-[52px] bg-white">
         <div
-          className="pt-0"
+          className="pt-0 h-[605px] object-fit"
           style={{
             backgroundImage: `url(${carouselBanner})`,
             backgroundSize: "auto",
@@ -18,10 +16,10 @@ const CarouselBanner = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="px-4 lg:px-14">
-            <Carousel className="w-full inline-block max-w-screen-2xl mx-auto h-[605px]">
+          <div className="px-4 lg:px-14 h-[605px]">
+            <Carousel className="w-full inline-block max-w-screen-2xl mx-auto h-[480px] ">
               <div
-                className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12"
+                className="my-28 md:my-8 py-12 px-16 flex flex-col md:flex-row-reverse items-center justify-between gap-12"
                 style={{
                   fontFamily: "Poppins",
                   fontStyle: "normal",
@@ -56,7 +54,7 @@ const CarouselBanner = () => {
                 </div>
               </div>
               {/* end */}
-              <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+              <div className="my-28 md:my-8 py-12 px-16 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
                 <div>{/* <img src={banner2} alt="banner1" /> */}</div>
                 <div
                   className="md:w-1/2"
@@ -88,8 +86,15 @@ const CarouselBanner = () => {
                 </div>
               </div>
             </Carousel>
+
+            <div className="-mt-[25px] ml-[648px] animate-pulse">
+              <img src={iconPlay} alt="" />
+            </div>
           </div>
           {/* end */}
+          {/* <div className="">
+            <img src={iconPlay} alt="" />
+          </div> */}
         </div>
       </div>
 
@@ -118,8 +123,6 @@ const CarouselBanner = () => {
             donate blood you have to be more than 16 years old.
           </p>
         </div>
-
-        <div className="h-40"></div>
       </div>
     </div>
   );
