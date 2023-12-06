@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <div className="">
       <div className="bg-[#E11B22] text-left ml-auto mr-auto text-white ">
-        <div className="p-10 bg-[#E11B22] max-w-[1536px] ml-auto mr-auto">
-          <div className="max-w-7xl mx-auto">
+        <div className="p-10 bg-[#E11B22] max-w-[2036px] ml-auto mr-auto">
+          <div className=" mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-11 gap-2">
               <div className="mb-5 col-span-2">
                 <h4 className="text-2xl pb-4 text-white">
@@ -24,7 +24,7 @@ const Footer = () => {
                   /> */}
                 </h4>
                 <p className="text-white ">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Maxime, neque non dolorem officia dolore saepe deserunt in
                   perferendis natus nesciunt enim incidunt libero fugiat
                   pariatur architecto maiores expedita quia ipsum! <br />

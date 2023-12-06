@@ -13,7 +13,8 @@ import NeedHelpSection from "../components/Home/NeedHelpSection";
 import ContactUs from "../components/Home/ContactUs";
 import ClientsThink from "../components/Home/ClientsThink";
 import MobileApp from "../components/Home/MobileApp";
-import { Footer } from "flowbite-react";
+import Footer from "../components/Home/Footer";
+
 
 const Home = () => {
   return (
