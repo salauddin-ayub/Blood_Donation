@@ -11,8 +11,14 @@ import React, { useState, useEffect } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+  
+  const navigate = useNavigate();
+
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -40,19 +46,36 @@ const Navbar = () => {
 
   //navItems array
   const navItems = [
-    { link: "Home", path: "home" },
-    { link: "About Us", path: "aboutUs" },
-    { link: "Blood", path: "blood" },
-    { link: "Donor", path: "donor" },
-    { link: "Campaign", path: "campaign" },
-    { link: "Contact", path: "contact" },
+    { link: "Home", path: "/", id: 1 },
+    {
+      link: "About Us",
+      path: "/about",
+      id: 2,
+      optionList: [{ name: "About", path: "/about" }],
+    },
+    { link: "Blood", path: "blood", id: 3 },
+    { link: "Donor", path: "donor", id: 4 },
+    { link: "Campaign", path: "campaign", id: 5 },
+    { link: "Contact", path: "contact", id: 6 },
   ];
+  const [activeModal, setActiveModal] = useState(null);
+
+  const openModal = (id) => {
+    setActiveModal(id);
+  };
+
+  const closeModal = () => {
+    setActiveModal(null);
+  };
+
+  console.log("Active Modal", activeModal);
+
   return (
     <div className="w-full md:bg-transparent fixed top-0 left-0 right-0 inline-block zindexnav">
       <div className="h-full ">
         {/* start */}
         <div
-          className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-8 ${
+          className={`hidden lg:grid lg:grid-cols-12  md:grid md:grid-cols-12 items-center bg-[#242424] h-8 ${
             isSticky
               ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
               : "bg-[#242424]"
@@ -60,7 +83,7 @@ const Navbar = () => {
         >
           <div className="col-span-9">
             <div
-              className={`hidden lg:grid lg:grid-cols-12 items-center bg-[#242424] h-8 ${
+              className={`hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-[#242424] h-8 ${
                 isSticky
                   ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
                   : "bg-[#242424]"
@@ -105,14 +128,12 @@ const Navbar = () => {
                 }}
               >
                 <img src={ion_location} alt="" className="text-white w-4 h-4" />
-                <p className="ml-2">
-                  demo,demo,,demo,demo,demo,demo,,demo,demo
-                </p>
+                <p className="ml-2">demo,demo,,demo,demo,demo,demo</p>
               </div>
             </div>
           </div>
           <div
-            className={`col-span-3 hidden lg:grid lg:grid-cols-12 items-center bg-brandPrimary h-8 ${
+            className={`col-span-3 hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-brandPrimary h-8 ${
               isSticky
                 ? "sticky top-0 left-0 right-0 bg-brandPrimary duration-300"
                 : ""
@@ -144,20 +165,22 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* Navbar */}
 
+      {/* Navbar START */}
       <div>
-        <header className="zindexnav h-[70px] bg-white">
+        <header className="zindexnav h-[60px] bg-white">
           <nav
-            className={`lg:px-14 px-14 h-full ${
+            className={`lg:px-14 md:px-14 px-14 h-full ${
               isSticky
-                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 border-b-2 border-brandPrimary"
-                : ""
+                ? "sticky top-0 left-0 right-0 bg-[white] duration-300 rounded-bl-lg shadow-md"
+                : `border-b-2 border-brandPrimary ${
+                    activeModal ? "border-b-0" : ""
+                  }`
             }`}
           >
             <div className="flex justify-between items-center text-base gap-8 h-full ">
               <div
-                className="border-[1px] border-black h-[70px] pl-2 pr-2"
+                className="border-[1px] border-black h-full pl-2 pr-2"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -172,7 +195,7 @@ const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="w-16 h-16 inline-block items-center"
+                      className="w-12 h-12 inline-block items-center"
                     />
                   </div>
                   <span className="text-[#263238]">Demo</span>
@@ -180,42 +203,72 @@ const Navbar = () => {
               </div>
 
               {/* nav itmes for large devices */}
-              <ul className="md:flex space-x-6 hidden font-semibold">
-                <div
-                  className=""
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  {navItems.map(({ link, path }, index) => (
-                    <Link
-                      to={path}
-                      spy={true}
-                      smooth={true}
-                      offset={-100}
+              <ul className="md:flex hidden font-semibold h-full">
+                <div className="flex justify-center items-center cursor-pointer">
+                  {navItems.map(({ id, link, path }, index) => (
+                    <div
                       key={path}
-                      className={`block text-gray90 hover:text-brandPrimary pl-4 pr-4 pt-[26px] pb-[26px] border-r ${
-                        index < navItems.length - 1 ? "" : "border-r-0"
-                      } LinkWithBorder`}
-                      style={{
-                        cursor: "pointer",
-                        display: "inline-block",
-                        lineHeight: "1rem",
-                      }}
+                      className="relative grouph-full"
+                      onMouseEnter={() => openModal(id)}
+                      onMouseLeave={closeModal}
                     >
-                      {link}
-                    </Link>
+                      <Link
+                        to={path}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        className={`block text-gray-900 hover:text-brandPrimary px-4 py-5 border-r rounded-b-sm ${
+                          index < navItems.length - 1 ? "" : "border-r-0"
+                        } LinkWithBorder`}
+                        style={{
+                          cursor: "pointer",
+                          display: "inline-block",
+                          lineHeight: "1rem",
+                        }}
+                      >
+                        {link}
+                      </Link>
+                      {/* Modal Start */}
+                      {activeModal === id && (
+        <div>
+          {navItems?.[activeModal - 1]?.optionList && (
+            <div
+              className={`absolute left-2/2 transform -translate-x-2/2 top-full`}
+              style={{ width: "calc(200% - 27px)" }}
+            >
+              <div className="bg-white max-w-md mx-auto rounded-b-sm py-4 pl-4 border border-t-0 shadow-xl">
+                <ul>
+                  {navItems?.[activeModal - 1]?.optionList?.map((val) => (
+                    <li key={val.path}>
+                      <button
+                        className="text-gray-900 hover:text-brandPrimary"
+                        onClick={() => {
+                          navigate(val.path);
+                          closeModal();
+                        }}
+                      >
+                        {val?.name}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+                      {/* Modal End */}
+                    </div>
                   ))}
                 </div>
 
-                <div className="hidden lg:flex items-center">
+                <div className="hidden lg:flex md:flex items-center">
                   <a
                     href="/"
-                    className="hidden lg:flex items-center hover:text-gray-900"
+                    className="hidden lg:flex md:flex items-center hover:text-gray-900"
                   >
-                    <button className=" bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-2 px-4 transition-all duration-300">
+                    <button className="bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-2 px-4 transition-all duration-300">
                       Search Donor
                     </button>
                   </a>
@@ -225,14 +278,6 @@ const Navbar = () => {
               {/* button's for large devices */}
 
               <div className="space-x-6 hidden lg:flex items-center">
-                {/* <div className="rounded-full hover:bg-red-100 p-1">
-                  <img
-                    src={navEarthLogo}
-                    alt="logo"
-                    className="w-6 inline-block items-center"
-                  />
-                </div> */}
-
                 <div
                   className="rounded-full hover:bg-brandPrimary p-1"
                   onMouseEnter={() => setIsHovered(true)}
