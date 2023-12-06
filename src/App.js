@@ -9,6 +9,7 @@ import {
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/registration" element={<Registration />}></Route>
       </Routes>
     </Router>
   );
