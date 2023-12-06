@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Home/Navbar";
 import CarouselBanner from "../components/Home/CarouselBanner";
 import AboutProject from "../components/Home/AboutProject";
@@ -11,18 +11,42 @@ import ClientsThink from "../components/Home/ClientsThink";
 import MobileApp from "../components/Home/MobileApp";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // The empty dependency array ensures this effect runs only once after mount
+
   return (
     <div className="">
-      <div><Navbar/></div>
-     <div className=""><CarouselBanner/></div>
-     <div className=""><AboutProject/></div>
-     <div className=""><TotalSection/></div>
-     <div className=""><HelpOther /></div>
-     <div className=""><NeedHelpSection /></div>
-     <div className="mt-12"><ContactUs /></div>
-     <div className="mt-12"><ClientsThink /></div>
-     <div className="mt-12"><MobileApp /></div>
-     <div className=""><Footer /></div>
+      <div>
+        <Navbar />
+      </div>
+      <div className="">
+        <CarouselBanner />
+      </div>
+      <div className="">
+        <AboutProject />
+      </div>
+      <div className="">
+        <TotalSection />
+      </div>
+      <div className="">
+        <HelpOther />
+      </div>
+      <div className="">
+        <NeedHelpSection />
+      </div>
+      <div className="mt-12">
+        <ContactUs />
+      </div>
+      <div className="mt-0">
+        <ClientsThink />
+      </div>
+      <div className="mt-12">
+        <MobileApp />
+      </div>
+      <div className="">
+        <Footer />
+      </div>
     </div>
   );
 };
