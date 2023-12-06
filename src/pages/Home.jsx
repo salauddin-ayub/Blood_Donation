@@ -1,14 +1,20 @@
 import React from "react";
 import Navbar from "../components/Home/Navbar";
 import CarouselBanner from "../components/Home/CarouselBanner";
+
+
+import TotalReviews from "../components/Home/TotalReviews";
+
 import AboutProject from "../components/Home/AboutProject";
-import Footer from "../components/Home/Footer";
+
 import HelpOther from "../components/Home/HelpOther";
 import TotalSection from "../components/Home/TotalSection";
 import NeedHelpSection from "../components/Home/NeedHelpSection";
 import ContactUs from "../components/Home/ContactUs";
 import ClientsThink from "../components/Home/ClientsThink";
 import MobileApp from "../components/Home/MobileApp";
+import Footer from "../components/Home/Footer";
+
 
 const Home = () => {
   return (
@@ -22,7 +28,7 @@ const Home = () => {
      <div className="mt-12"><ContactUs /></div>
      <div className="mt-12"><ClientsThink /></div>
      <div className="mt-12"><MobileApp /></div>
-     <div className=""><Footer /></div>
+     <div className=""><Footer/></div>
     </div>
   );
 };
