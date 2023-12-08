@@ -10,7 +10,7 @@ import emojion_handshake from "../../assets/icons/emojion_handshake.png";
 export default function AboutProject() {
   return (
     <div className="">
-      <div className="mx-28 border border-black">
+      <div className="mx-28">
         <div className="flex justify-end mt-4 text-xl font-semibold">
           <img src={Rectangle} alt="" />
           <p className="-ml-[140px] mt-[10px] font-bold text-brandPrimary text-[14px]">
