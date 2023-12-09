@@ -10,7 +10,7 @@ import gg_phone from "../../assets/icons/gg_phone.png";
 import React, { useState, useEffect } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -43,17 +43,22 @@ const Navbar = () => {
 
   //navItems array
   const navItems = [
-    { link: "Home", path: "/", id: 1 },
+    { link: "Home", path: "/", id: 1},
     {
       link: "About Us",
-      path: "/about",
+      path: "",
       id: 2,
-      optionList: [{ name: "About", path: "/about" }],
+      optionList: [{ name: "About", path: "/about" },{ name: "Our Team", path: "/our-team" } ,{ name: "ISO 2008 Certified", path: "/iso-2008-certified" }],
     },
-    { link: "Blood", path: "blood", id: 3},
-    { link: "Donor", path: "donor", id: 4 },
-    { link: "Campaign", path: "campaign", id: 5 },
-    { link: "Contact", path: "contact", id: 6 },
+    {
+      link: "Blood",
+      path: "",
+      id: 3,
+      optionList: [{ name: "me", path: "/me" }],
+    },
+    { link: "Donor", path: "", id: 4 },
+    { link: "Campaign", path: "", id: 5 },
+    { link: "Contact", path: "", id: 6 },
   ];
   const [activeModal, setActiveModal] = useState(null);
 
@@ -225,6 +230,10 @@ const Navbar = () => {
                       >
                         {link}
                       </Link>
+
+
+
+
                       {/* Modal Start */}
                       {activeModal === id && (
                         <div>
