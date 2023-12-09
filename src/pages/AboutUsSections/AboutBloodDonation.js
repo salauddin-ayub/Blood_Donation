@@ -5,8 +5,8 @@ import ImageBlood1 from "../../assets/blood1.png";
 function AboutBloodDonation() {
   return (
     <div className="max-w-[2036px] ml-auto mr-auto">
-      <div className="grid grid-cols-4 max-w-[1536px] mx-auto mt-4">
-        <div className="col-span-1 bg-brandPrimary md:ml-10 rounded-md">
+      <div className="grid grid-cols-4  mx-auto mt-4">
+        <div className="col-span-1 bg-brandPrimary md:ml-10 rounded-md ">
           <p className="font-bold mb-8 mt-4 text-white ml-6">
             About Blood Donation
           </p>
@@ -40,8 +40,8 @@ function AboutBloodDonation() {
           <p>How we thought of establishing this website</p>
         </div>
         <div
-          className="md:ml-10 md:mr-20 rounded-md -mt-6 z-30"
-          style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          className="md:ml-10 md:mr-20 rounded-md -mt-6 z-30 shadow-lg"
+          // style={{ boxShadow: "rgba(2, 0, 0.77, 0.35) 0px 5px 15px" }}
         >
           <br></br>
           <p className="p-2 ">
@@ -60,12 +60,12 @@ function AboutBloodDonation() {
       </div>
 
       {/* blood image sectons */}
-      <div className="grid grid-cols-4 gap-3 ml-10 mt-10 text-sx">
-        <div className="shadow-2xl p-4 text-16">
-         
-          <div className="zindexnav z-1000">
-          <p className="p-4 zindexnav bg-brandPrimary rounded-md font-bold text-white w-2/4 ">Our Mission</p>
-
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5  mt-10 text-sx ml-8 mr-8">
+        <div className="shadow-2xl p-4 text-16 rounded-sm">
+          <div className="zindexnav relative">
+            <p className="p-4 zindexnav bg-brandPrimary rounded-md font-bold text-white w-2/4 ">
+              Our Mission
+            </p>
           </div>
           <div class="relative -mt-14">
             <div className=" z-100 relative zindex  overflow-hidden rounded-2xl">
@@ -77,7 +77,81 @@ function AboutBloodDonation() {
             </div>
             <div className=" z-0 relative">
               <img
-                class="w-4/6 rounded-2xl h-44 h  -mt-40 ml-14  stransition-transform transform-gpu scale-100"
+                class="w-4/6 rounded-2xl h-44 h bg-black  -mt-40 ml-14  stransition-transform transform-gpu scale-100"
+                src={ImageBlood}
+                alt=""
+              />
+            </div>
+          </div>
+
+          <p className="mt-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.“
+          </p>
+          <p className="mt-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.“
+          </p>
+        </div>
+
+        <div className="shadow-2xl p-4 text-16 rounded-sm">
+          <div className="zindexnav relative">
+            <p className="p-4 zindexnav bg-brandPrimary rounded-md font-bold text-white w-2/4 ">
+              Our Mission
+            </p>
+          </div>
+          <div class="relative -mt-14">
+            <div className=" z-100 relative zindex  overflow-hidden rounded-2xl">
+              <img
+                class="h-52 w-4/6 rounded-2xl overflow-hidden zindex mt-2 transition-transform transform-gpu scale-100 translate-y-8 translate-x-4"
+                src={ImageBlood1}
+                alt=""
+              />
+            </div>
+            <div className=" z-0 relative">
+              <img
+                class="w-4/6 rounded-2xl h-44 h bg-black  -mt-40 ml-14  stransition-transform transform-gpu scale-100"
+                src={ImageBlood}
+                alt=""
+              />
+            </div>
+          </div>
+
+          <p className="mt-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.“
+          </p>
+          <p className="mt-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.“
+          </p>
+        </div>
+
+        <div className="shadow-2xl p-4 text-16 rounded-sm">
+          <div className="zindexnav relative">
+            <p className="p-4 zindexnav bg-brandPrimary rounded-md font-bold text-white w-2/4 ">
+              Our Mission
+            </p>
+          </div>
+          <div class="relative -mt-14">
+            <div className=" z-100 relative zindex  overflow-hidden rounded-2xl">
+              <img
+                class="h-52 w-4/6 rounded-2xl overflow-hidden zindex mt-2 transition-transform transform-gpu scale-100 translate-y-8 translate-x-4"
+                src={ImageBlood1}
+                alt=""
+              />
+            </div>
+            <div className=" z-0 relative">
+              <img
+                class="w-4/6 rounded-2xl h-44 h bg-black  -mt-40 ml-14  stransition-transform transform-gpu scale-100"
                 src={ImageBlood}
                 alt=""
               />
@@ -98,6 +172,8 @@ function AboutBloodDonation() {
           </p>
         </div>
       </div>
+      
+    
     </div>
   );
 }

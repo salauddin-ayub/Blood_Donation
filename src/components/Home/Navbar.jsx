@@ -48,7 +48,7 @@ const Navbar = () => {
       link: "About Us",
       path: "",
       id: 2,
-      optionList: [{ name: "About", path: "/about", id: 1 }],
+      optionList: [{ name: "About", path: "/about" },{ name: "Our Team", path: "/our-team" } ,{ name: "ISO 2008 Certified", path: "/iso-2008-certified" }],
     },
     {
       link: "Blood",
