@@ -56,7 +56,8 @@ const Navbar = () => {
       id: 3,
       optionList: [
         { name: "Request Blood", path: "/request-blood", id: 1 },
-        { name: "Why Give Blood", path: "/about", id: 2 },
+        { name: "About Blood", path: "/about-blood", id: 2 },
+        { name: "Why Give Blood", path: "/about", id: 3 },
       ],
     },
     { link: "Donor", path: "", id: 4 },
