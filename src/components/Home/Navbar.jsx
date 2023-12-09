@@ -50,7 +50,7 @@ const Navbar = () => {
       id: 2,
       optionList: [{ name: "About", path: "/about" }],
     },
-    { link: "Blood", path: "blood", id: 3 },
+    { link: "Blood", path: "blood", id: 3},
     { link: "Donor", path: "donor", id: 4 },
     { link: "Campaign", path: "campaign", id: 5 },
     { link: "Contact", path: "contact", id: 6 },
