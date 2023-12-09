@@ -60,7 +60,7 @@ function AboutBloodDonation() {
       </div>
 
       {/* blood image sectons */}
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-5 ml-10 mt-10 text-sx">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5  mt-10 text-sx ml-8 mr-8">
         <div className="shadow-2xl p-4 text-16 rounded-sm">
           <div className="zindexnav relative">
             <p className="p-4 zindexnav bg-brandPrimary rounded-md font-bold text-white w-2/4 ">
