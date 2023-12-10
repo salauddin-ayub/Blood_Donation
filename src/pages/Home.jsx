@@ -99,25 +99,25 @@ const Home = () => {
       <AnimatedComponent delay={visibleSections.aboutProject ? 0 : 1000}>
         <AboutProject id="aboutProject" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.totalSection ? 0 : 2000}>
+      <AnimatedComponent delay={visibleSections.totalSection ? 0 : 1000}>
         <TotalSection id="totalSection" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.helpOther ? 0 : 2000}>
+      <AnimatedComponent delay={visibleSections.helpOther ? 0 : 1000}>
         <HelpOther id="helpOther" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.needHelpSection ? 0 : 4000}>
+      <AnimatedComponent delay={visibleSections.needHelpSection ? 0 : 1000}>
         <NeedHelpSection id="needHelpSection" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.contactUs ? 0 : 5000}>
+      <AnimatedComponent delay={visibleSections.contactUs ? 0 : 1000}>
         <ContactUs id="contactUs" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.clientsThink ? 0 : 6000}>
+      <AnimatedComponent delay={visibleSections.clientsThink ? 0 : 1000}>
         <ClientsThink id="clientsThink" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.mobileApp ? 0 : 7000}>
+      <AnimatedComponent delay={visibleSections.mobileApp ? 0 : 1000}>
         <MobileApp id="mobileApp" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.footer ? 0 : 8000}>
+      <AnimatedComponent delay={visibleSections.footer ? 0 : 1000}>
         <Footer id="footer" />
       </AnimatedComponent>
 
