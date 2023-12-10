@@ -102,7 +102,7 @@ const Home = () => {
       <AnimatedComponent delay={visibleSections.totalSection ? 0 : 2000}>
         <TotalSection id="totalSection" />
       </AnimatedComponent>
-      <AnimatedComponent delay={visibleSections.helpOther ? 0 : 3000}>
+      <AnimatedComponent delay={visibleSections.helpOther ? 0 : 2000}>
         <HelpOther id="helpOther" />
       </AnimatedComponent>
       <AnimatedComponent delay={visibleSections.needHelpSection ? 0 : 4000}>
