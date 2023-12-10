@@ -54,10 +54,10 @@ const Home = () => {
       <div className="">
         <NeedHelpSection />
       </div>
-      <div className="mt-12">
+      <div className="">
         <ContactUs />
       </div>
-      <div className="mt-12">
+      <div className="">
         <ClientsThink />
       </div>
       <div className="mt-12">

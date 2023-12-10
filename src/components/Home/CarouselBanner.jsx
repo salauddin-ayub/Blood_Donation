@@ -18,7 +18,7 @@ const CarouselBanner = () => {
           }}
         >
           <div className="px-4 lg:px-14 h-[605px]">
-            <Carousel className="w-full inline-block max-w-screen-2xl mx-auto h-[480px] ">
+            <Carousel className="w-full inline-block  mx-auto h-[480px] ">
               <div
                 className="my-28 md:my-8 py-12 px-16 flex flex-col md:flex-row-reverse items-center justify-between gap-12"
                 style={{
