@@ -9,7 +9,7 @@ import facebook from "../../assets/icons/bi_facebook.png";
 import gg_phone from "../../assets/icons/gg_phone.png";
 import React, { useState, useEffect } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/mainLogo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -184,7 +184,7 @@ const Navbar = () => {
           >
             <div className="flex justify-between items-center text-base gap-8 h-full ">
               <div
-                className="border-[1px] border-black h-full pl-2 pr-2"
+                className="border-[1px] border-gray-400 h-full pl-2 pr-2 overflow-hidden"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -199,10 +199,10 @@ const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="w-12 h-12 inline-block items-center"
+                      className="w-20 h-20 inline-block items-center"
                     />
                   </div>
-                  <span className="text-[#263238]">Demo</span>
+                  {/* <span className="text-[#263238]">Demo</span> */}
                 </a>
               </div>
 
