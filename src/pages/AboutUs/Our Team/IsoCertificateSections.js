@@ -8,16 +8,16 @@ function IsoCertificateSections() {
       <p className="p-2 md:w-1/6 w-full bg-red-700 rounded-md font-bold text-white mt-6">
         ISO 2008 Certified
       </p>
-      <div>
+      <div >
         <img
-          className="rounded-md p-2 mt-2 w-8/10 ml-auto mr-auto max-w-40"
+          className="rounded-md p-2 mt-2 w-3/4 ml-auto mr-auto max-w-full"
           src={images1}
           alt=""
         ></img>
       </div>
       <div className="mb-4 mt-2">
         <img
-          className="rounded-md p-2 mt-2 md:w-2/4 ml-auto mr-auto max-w-full"
+          className="rounded-md p-2 mt-2 md:w-2/5 ml-auto mr-auto max-w-full"
           src={images2}
           alt=""
         ></img>
