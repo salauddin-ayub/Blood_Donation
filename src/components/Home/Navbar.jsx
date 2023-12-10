@@ -238,14 +238,14 @@ const Navbar = () => {
                         <div>
                           {navItems?.[activeModal - 1]?.optionList && (
                             <div
-                              className={`absolute left-2/2 transform -translate-x-2/2 top-full mt-[3px]`}
+                              className={`absolute left-2/2 transform -translate-x-2/2 top-full mt-[1px]`}
                               style={{ width: "calc(300% - 27px)" }}
                             >
-                              <div className="bg-white max-w-md mx-auto rounded-b-sm py-4 pl-4 border border-t-0 shadow-xl">
-                                <ul>
+                              <div className="bg-white max-w-md mx-auto rounded-b-sm  border border-t-0 shadow-xl">
+                                <ul >
                                   {navItems?.[activeModal - 1]?.optionList?.map(
                                     (val, index) => (
-                                      <li key={val.path}>
+                                      <li className="hover:bg-red-200 py-1 pl-1 text-xs"  key={val.path}>
                                         <button
                                           className={`text-gray-900 hover:text-brandPrimary ${
                                             index > 0 ? "mt-2" : ""
