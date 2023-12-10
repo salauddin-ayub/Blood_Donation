@@ -88,9 +88,9 @@ const CarouselBanner = () => {
               </div>
             </Carousel>
 
-            <div className="-mt-[25px] flex justify-center animate-pulse">
+            {/* <div className="-mt-[25px] flex justify-center">
               <img src={iconPlay} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
