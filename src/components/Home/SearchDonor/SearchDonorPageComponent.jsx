@@ -18,21 +18,26 @@ const SearchDonorPageComponent = () => {
         <hr className="border-t-[2px] border-[#44444480]" />
       </div>
 
-      <div className="grid grid-cols-12 gap-4 border border-black h-96">
-        <div className="col-span-3 border-black ">
-          <div className="border border-blue-800 h-80 mr-[25px] mt-6 rounded-xl shadow-top-right-left-bottom-lg">
+      <div className="grid grid-cols-12 gap-4 h-96">
+        <div className="col-span-3 border-r border-[#44444480]">
+          <div className="border border-blue-800 h-80 mr-[25px]  rounded-xl shadow-top-right-left-bottom-lg">
             <div className="h-full border border-pink-600 mx-4">
-              <div className="ml-6">
-                <p className="font-bold text-[#444]">Area</p>
+              <div className="ml-6 mt-[20px]">
+                <p className="font-semibold text-[#444]">Area</p>
               </div>
 
               <div className="my-4">
                 <hr className="border-t-[1px] border-[#44444480]" />
               </div>
+
+              <div className="h-44 mt-0 border border-cyan-400">
+
+                
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-span-9 border border-red-700"></div>
+        <div className="col-span-9 border border-yellow-700"></div>
       </div>
     </div>
   );

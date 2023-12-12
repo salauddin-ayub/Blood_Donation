@@ -155,7 +155,7 @@ const Navbar = () => {
             }`}
           >
             <div
-              className="col-span-12 text-white flex items-center justify-center space-x-3 lg:ml-[210px] md:ml-0 ml-0"
+              className="col-span-12 text-white flex items-center justify-center space-x-3 lg:ml-[168px] md:ml-0 ml-0"
               style={{
                 fontFamily: "Poppins",
                 fontSize: "11px",
@@ -230,7 +230,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`block text-gray-900 hover:text-brandPrimary lg:px-12 md:px-4 px-4 py-5 border-r rounded-b-sm ${
+                        className={`block text-gray-900 hover:text-brandPrimary lg:px-8 md:px-4 px-4 py-5 border-r rounded-b-sm ${
                           index < navItems.length - 1 ? "" : "border-r-0"
                         } LinkWithBorder`}
                         style={{
@@ -248,7 +248,7 @@ const Navbar = () => {
                           {navItems?.[activeModal - 1]?.optionList && (
                             <div
                               className={`absolute transform -translate-x-2/2 top-full mt-[1px] ${
-                                index === 1 ? "-left-32" : "-left-[86px]"
+                                index === 1 ? "-left-20" : "-left-[38px]"
                               }`}
                               style={{ width: "calc(300% - 27px)" }}
                             >
