@@ -155,7 +155,7 @@ const Navbar = () => {
             }`}
           >
             <div
-              className="col-span-12 text-white flex items-center justify-center space-x-3 lg:ml-[168px] md:ml-0 ml-0"
+              className="col-span-12 text-white flex items-center justify-center space-x-3  lg:ml-[115px]  md:ml-0 ml-0"
               style={{
                 fontFamily: "Poppins",
                 fontSize: "11px",
