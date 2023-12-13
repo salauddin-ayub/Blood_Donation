@@ -121,3 +121,6 @@ header {
   align-items: center;
 }
 
+.last-child-gap-0 {
+  margin-right: 0; /* or margin-right: initial; */
+}

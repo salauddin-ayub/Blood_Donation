@@ -1,6 +1,9 @@
 import React from "react";
 import TitleTopComponent from "../../Blood/TitleTopComponent";
 import donor_card_icon from "../../../assets/donor_card_icon.jpeg";
+import donor_card_icon3 from "../../../assets/donor_card_icon3.jpeg";
+import donor_card_icon2 from "../../../assets/donor_card_icon2.jpeg";
+import DonorCardComponent from "../../DonorCardComponent";
 
 const SearchDonorPageComponent = () => {
   return (
@@ -19,8 +22,8 @@ const SearchDonorPageComponent = () => {
         <hr className="border-t-[2px] border-[#44444480]" />
       </div>
 
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-3 border-r border-[#44444480] pb-20 h-full flex flex-col">
+      <div className="grid grid-cols-12">
+        <div className="col-span-3 border-r border-[#44444480] pb-4 h-full flex flex-col">
           <div className="mr-[25px] rounded-xl shadow-top-right-left-bottom-lg h-full flex-grow mt-4">
             <div className="mx-4">
               <div className="ml-6 pt-[20px]">
@@ -138,7 +141,7 @@ const SearchDonorPageComponent = () => {
           </div>
         </div>
         {/* half */}
-        <div className="col-span-9 p-4 pt-1">
+        <div className="col-span-9 p-4 px-6 pt-1">
           <div className=" ">
             <div className="flex justify-between items-center">
               <div className="">
@@ -182,56 +185,189 @@ const SearchDonorPageComponent = () => {
               <hr className="border-t-[1px] border-[#44444480]" />
             </div>
             {/* horizontal end */}
-            <div className="w-[350px] h-[500px] bg-white rounded-xl shadow-bottom-left-right">
-              <div className="w-full h-[90px] bg-[#E11B22B2] rounded-tl-xl rounded-tr-xl flex items-center px-6 gap-6">
-                <div>
-                  <img
-                    src={donor_card_icon}
-                    alt=""
-                    className="w-12 h-12 rounded-full"
-                  />
-                </div>
-                <div className="">
-                  <p className="text-base font-bold text-white">
-                    MD. Salauddin Ayub
-                  </p>
-                  <p className="mt-2 text-xs text-white">Adabor,Dhaka</p>
-                </div>
-              </div>
 
-              <div className="mx-4 mt-3">
-                <table className="w-full">
-                  <tbody>
-                    <tr>
-                      <td colSpan={3}>
-                        <div>
-                          <p className="text-[12px] text-justify">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.“
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border">
-                        <div className="">
-                          <p>Blood Group</p>
-                        </div>
-                      </td>
-                      <td className="w-2">:</td>
-                      <td>
-                        <div>
-                          <p className="font-bold text-[16px]">A+</p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            {/* START DONOR CARD */}
+            <div className="grid grid-cols-3 gap-4">
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon3}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1 last-child-gap-0">
+                <DonorCardComponent
+                  image={donor_card_icon2}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
               </div>
             </div>
+            {/* end 1st three */}
+            <div className="grid grid-cols-3 gap-4 mt-5">
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon3}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1 last-child-gap-0">
+                <DonorCardComponent
+                  image={donor_card_icon2}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+            </div>
+            {/* end 2nd three */}
+            <div className="grid grid-cols-3 gap-4 mt-5">
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon3}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1 last-child-gap-0">
+                <DonorCardComponent
+                  image={donor_card_icon2}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+            </div>
+            {/* end 3rd card */}
+            <div className="grid grid-cols-3 gap-4 mt-5">
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1">
+                <DonorCardComponent
+                  image={donor_card_icon3}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+              <div className="col-span-1 last-child-gap-0">
+                <DonorCardComponent
+                  image={donor_card_icon2}
+                  donorName="MD. Salaudding Ayub"
+                  donorAddress="Adabor, Dhaka"
+                  description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.“ "
+                  bloodGroup="A+"
+                  age="25"
+                  weight="58"
+                  height="5 Feet 7 inch"
+                  extraColumnLeft=""
+                  extraColumnRight=""
+                />
+              </div>
+            </div>
+            {/* end 4rth card */}
+            {/* END DONOR CARD */}
             {/* end */}
           </div>
         </div>

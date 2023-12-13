@@ -183,7 +183,7 @@ const Navbar = () => {
 
       {/* Navbar START */}
       <div>
-        <header className="zindexnav h-[60px] bg-white ">
+        <header className="zindexnav h-[50px] bg-white ">
           <nav
             className={`lg:px-14 md:px-14 px-14 h-full ${
               isSticky
@@ -191,7 +191,7 @@ const Navbar = () => {
                 : `border-b-0 ${activeModal ? "border-b-0" : ""}`
             }`}
           >
-            <div className="flex justify-between items-center text-base lg:gap-8 md:gap-4 gap-8 h-full lg:px-[55px] md:px-0 px-0 ">
+            <div className="flex justify-between items-center text-base lg:gap-8 md:gap-0 gap-8 h-full lg:px-[55px] md:px-0 px-0 ">
               <div
                 className="border-[1px] border-gray-400 h-full pl-2 pr-2 overflow-hidden"
                 style={{
@@ -208,7 +208,7 @@ const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="w-20 h-20 inline-block items-center"
+                      className="w-16 h-16 inline-block items-center"
                     />
                   </div>
                   {/* <span className="text-[#263238]">Demo</span> */}
@@ -216,7 +216,7 @@ const Navbar = () => {
               </div>
 
               {/* nav itmes for large devices */}
-              <ul className="md:flex hidden font-semibold h-full text-sm">
+              <ul className="md:flex hidden font-semibold h-full text-sm gap-5">
                 <div className="flex justify-center items-center cursor-pointer">
                   {navItems.map(({ id, link, path }, index) => (
                     <div
@@ -230,7 +230,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`block text-gray-900 hover:text-brandPrimary lg:px-4 md:px-4 px-4 py-5 border-r rounded-b-sm ${
+                        className={`block text-gray-900 hover:text-brandPrimary lg:px-4 md:px-2 px-4 lg:py-4 md:py-4 py-5 border-r rounded-b-sm ${
                           index < navItems.length - 1 ? "" : "border-r-0"
                         } LinkWithBorder`}
                         style={{
@@ -248,7 +248,7 @@ const Navbar = () => {
                           {navItems?.[activeModal - 1]?.optionList && (
                             <div
                               className={`absolute transform -translate-x-2/2 top-full mt-[0px] ${
-                                index === 1 ? "-left-8" : ""
+                                index === 1 ? "lg:-left-4 md:-left-0 -left-4" : ""
                               }`}
                               style={{ width: "calc(300% - 27px)" }}
                             >
@@ -291,7 +291,7 @@ const Navbar = () => {
                     to="/home/search-donor"
                     className="hidden lg:flex md:flex items-center hover:text-gray-900"
                   >
-                    <button className="bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-2 px-4 transition-all duration-300">
+                    <button className="bg-brandPrimary border font-normal hover:border-black hover:bg-brandPrimary rounded-full text-white py-1 px-2 transition-all duration-300">
                       Search Donor
                     </button>
                   </Link>
