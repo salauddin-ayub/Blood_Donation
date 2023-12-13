@@ -90,7 +90,7 @@ const Navbar = () => {
       <div className="h-full ">
         {/* start */}
         <div
-          className={`hidden lg:grid lg:grid-cols-12  md:grid md:grid-cols-12 items-center lg:bg-brandPrimary md:bg-[#242424] bg-[#242424] h-8  ${
+          className={`hidden lg:grid lg:grid-cols-12  md:grid md:grid-cols-12 items-center lg:bg-brandPrimary md:bg-[#242424] bg-[#242424] h-6  ${
             isSticky
               ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
               : "bg-[#242424]"
@@ -98,7 +98,7 @@ const Navbar = () => {
         >
           <div className="col-span-9">
             <div
-              className={`hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-[#242424] h-8 ${
+              className={`hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-center bg-[#242424] h-6 ${
                 isSticky
                   ? "sticky top-0 left-0 right-0 bg-[#242424] duration-300"
                   : "bg-[#242424]"
@@ -114,7 +114,7 @@ const Navbar = () => {
                   lineHeight: "normal",
                 }}
               >
-                <img src={gg_phone} alt="" className="text-white w-4 h-4" />
+                <img src={gg_phone} alt="" className="text-white w-3 h-3" />
                 <p className="ml-[13px]">+12736781789</p>
               </div>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
                   lineHeight: "normal",
                 }}
               >
-                <img src={mdi_email} alt="" className="text-white w-4 h-4" />
+                <img src={mdi_email} alt="" className="text-white w-3 h-3" />
                 <p className="ml-2">blooddonate217@gmail.com</p>
               </div>
 
@@ -142,20 +142,20 @@ const Navbar = () => {
                   lineHeight: "normal",
                 }}
               >
-                <img src={ion_location} alt="" className="text-white w-4 h-4" />
+                <img src={ion_location} alt="" className="text-white w-3 h-3" />
                 <p className="ml-2">demo,demo,,demo,demo,demo,demo</p>
               </div>
             </div>
           </div>
           <div
-            className={`col-span-3 hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-right bg-brandPrimary h-8 lg:pr-28 md:pr-0 pr-0 ${
+            className={`col-span-3 hidden lg:grid lg:grid-cols-12 md:grid md:grid-cols-12 items-right bg-brandPrimary h-6 lg:pr-28 md:pr-0 pr-0 ${
               isSticky
                 ? "sticky top-0 left-0 right-0 bg-brandPrimary duration-300"
                 : ""
             }`}
           >
             <div
-              className="col-span-12 text-white flex items-center justify-center space-x-3 lg:ml-[168px] md:ml-0 ml-0"
+              className="col-span-12 text-white flex items-center justify-center space-x-3  lg:ml-[115px]  md:ml-0 ml-0"
               style={{
                 fontFamily: "Poppins",
                 fontSize: "11px",
@@ -165,16 +165,16 @@ const Navbar = () => {
               }}
             >
               <a href="/">
-                <img src={facebook} alt="Facebook" className="w-4 h-4" />
+                <img src={facebook} alt="Facebook" className="w-3 h-3" />
               </a>
               <a href="/">
-                <img src={twitter} alt="Twitter" className="w-4 h-4" />
+                <img src={twitter} alt="Twitter" className="w-3 h-3" />
               </a>
               <a href="/">
-                <img src={instagram} alt="Instagram" className="w-4 h-4" />
+                <img src={instagram} alt="Instagram" className="w-3 h-3" />
               </a>
               <a href="/">
-                <img src={pinterest} alt="Printerest" className="w-4 h-4" />
+                <img src={pinterest} alt="Printerest" className="w-3 h-3" />
               </a>
             </div>
           </div>
@@ -216,7 +216,7 @@ const Navbar = () => {
               </div>
 
               {/* nav itmes for large devices */}
-              <ul className="md:flex hidden font-semibold h-full">
+              <ul className="md:flex hidden font-semibold h-full text-sm">
                 <div className="flex justify-center items-center cursor-pointer">
                   {navItems.map(({ id, link, path }, index) => (
                     <div
@@ -230,7 +230,7 @@ const Navbar = () => {
                         spy={true}
                         smooth={true}
                         offset={-100}
-                        className={`block text-gray-900 hover:text-brandPrimary lg:px-8 md:px-4 px-4 py-5 border-r rounded-b-sm ${
+                        className={`block text-gray-900 hover:text-brandPrimary lg:px-4 md:px-4 px-4 py-5 border-r rounded-b-sm ${
                           index < navItems.length - 1 ? "" : "border-r-0"
                         } LinkWithBorder`}
                         style={{
@@ -247,8 +247,8 @@ const Navbar = () => {
                         <div>
                           {navItems?.[activeModal - 1]?.optionList && (
                             <div
-                              className={`absolute transform -translate-x-2/2 top-full mt-[1px] ${
-                                index === 1 ? "-left-20" : "-left-[38px]"
+                              className={`absolute transform -translate-x-2/2 top-full mt-[0px] ${
+                                index === 1 ? "-left-8" : ""
                               }`}
                               style={{ width: "calc(300% - 27px)" }}
                             >
