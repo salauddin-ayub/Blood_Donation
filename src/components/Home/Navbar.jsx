@@ -65,7 +65,12 @@ const Navbar = () => {
         {
           name: "Health And Eligibility",
           path: "/blood/health-and-eligibility",
-          id: 3,
+          id: 4,
+        },
+        {
+          name: "Know The Risks",
+          path: "/blood/know-the-risk",
+          id: 4,
         },
       ],
     },
