@@ -58,7 +58,7 @@ export default function AboutBloodPage() {
         </div>
       </div>
       {/* Your blood donation essentials */}
-      <div className="flex flex-col md:flex-col lg:flex-row gap-10 p-1">
+      <div className="flex flex-col md:flex-col lg:flex-row gap-10 p-1 mt-10 ">
         <div>
           <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 lg:mt-2 md:mt-2 mt-0 font-bold shadow-md  text-left">
             <span className=""> Your blood</span> <br />
@@ -101,8 +101,8 @@ export default function AboutBloodPage() {
         </div>
       </div>
       {/* How your donated red blood cells help */}
-      <div className="mt-12 bg-[#FFF]  w-full md:h-[600px] h-[2000px]  " style={{
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+      <div className="mt-12 bg-[#FFF]  w-full lg:h-[600px] md:h-[700px] h-[1360px]  " style={{
+        boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
 
 
@@ -110,12 +110,12 @@ export default function AboutBloodPage() {
 
 
         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-auto-flow  ">
-          <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md text-left mb-10 md:mb-0 ">
+          <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md  mb-10 md:mb-0 ">
             How your donated <br /> Red blood cells help
           </button></h2>
 
 
-          <div className="flex flex-col md:flex-row items-center gap-6 lg:col-start-2  ">
+          <div className="flex flex-row  items-center gap-6 lg:col-start-2   ">
             <div>
               <img src={donatedimg1} alt="" />
             </div>
@@ -126,18 +126,18 @@ export default function AboutBloodPage() {
             </div>
           </div>
           {/* ---------- */}
-          <div className="flex flex-col md:flex-row items-center gap-6  ">
+          <div className="flex flex-row   items-center gap-6 space-y-7 ">
             <div>
               <img src={donatedimg2} alt="" />
             </div>
             <div>
               <h2 className="text-[#E11B22] font-bold text-[60px]">19%</h2>
-              <p className="text-[#E11B22]">anemia and <br />
+              <p className="text-[#E11B22] ">anemia and 
                 other needs</p>
             </div>
           </div>
           {/* ========== */}
-          <div className="flex flex-col md:flex-row items-center gap-6 lg:pl-10 ">
+          <div className="flex flex-row  items-center gap-6 lg:pl-10 space-y-7">
             <div>
               <img src={donatedimg3} alt="" />
             </div>
@@ -148,7 +148,7 @@ export default function AboutBloodPage() {
             </div>
           </div>
           {/* =========== */}
-          <div className="flex flex-col md:flex-row items-center gap-6  ">
+          <div className="flex flex-row  items-center gap-6 space-y-7 ">
             <div>
               <img src={donatedimg4} alt="" />
             </div>
@@ -159,7 +159,7 @@ export default function AboutBloodPage() {
             </div>
           </div>
           {/* ========= */}
-          <div className="flex flex-col md:flex-row items-center gap-6 ">
+          <div className="flex flex-row  items-center gap-6 space-y-7">
             <div>
               <img src={donatedimg5} alt="" />
             </div>
@@ -170,7 +170,7 @@ export default function AboutBloodPage() {
             </div>
           </div>
           {/* ============= */}
-          <div className="flex flex-col md:flex-row items-center gap-6 lg:pl-10 ">
+          <div className="flex flex-row items-center gap-6 lg:pl-10 space-y-7 ">
             <div>
               <img src={donatedimg6} alt="" />
             </div>
@@ -182,7 +182,7 @@ export default function AboutBloodPage() {
             </div>
           </div>
           {/* ========== */}
-          <div className="flex flex-col md:flex-row items-center gap-6  ">
+          <div className="flex flex-row items-center gap-6 space-y-7 ">
             <div>
               <img src={donatedimg7} alt="" />
             </div>
@@ -199,7 +199,8 @@ export default function AboutBloodPage() {
       {/* Blood Types and Transfusion */}
 
       <div className="mt-12  bg-[#FFF]  w-full md:h-[300px] h-[800px] relative p-1 " style={{
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+        
+        boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
         <div>
           <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md text-left mb-10 md:mb-0 absolute -top-10">
@@ -217,100 +218,110 @@ export default function AboutBloodPage() {
       </div>
 
       {/* total blood supply */}
-      <div className="mt-12  bg-[#FFF]  w-full md:h-[300px] h-[800px] relative p-1 shadow-2xl " style={{
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+      <div className="mt-12  bg-[#FFF]  w-full md:h-[500px] h-[800px] relative p-1 shadow-2xl " style={{
+       boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
         <div>
           <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md text-left mb-10 md:mb-0 absolute -top-10">
             Total Blood Supply of World Bangladesh
           </button></h2>
         </div>
-        <div className="mt-10 grid grid-cols-4 text-center">
-          <div className="flex flex-col items-center">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 text-center ">
+        
+        <div className="flex flex-col items-center mt-10 ">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ------------ */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10 ">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ----------- */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ------------ */}
 
-          <div className="flex flex-col items-center">
-            <div >
-              <h2>O Positive</h2>
-              <p>(O+)</p>
-            </div>
-            <div >
-              <img src={dropblood} alt="" />
-            </div>
-          </div>
-          {/* ----------- */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
+            </div>
+          </div>
+          {/* ----------- */}
+          <div className="flex flex-col items-center mt-10">
+            <div >
+              <h2>O Positive</h2>
+              <p>(O+)</p>
+            </div>
+            <div>
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ------------- */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ----------- */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl">29%</h2>
             </div>
           </div>
           {/* ---------- */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-10">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
             </div>
             <div>
-              <img src={dropblood} alt="" />
+              <img className="w-[70px]" src={dropblood} alt="" />
+              <h2 className="-mt-14 text-white text-2xl ">29%</h2>
             </div>
           </div>
+        </div>
           {/* ======== */}
         </div>
 
       </div>
-    </div>
+   
 
 
   );
