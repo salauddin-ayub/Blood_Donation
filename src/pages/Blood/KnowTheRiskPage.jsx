@@ -191,7 +191,7 @@ export default function KnowTheRiskPage() {
             </p>
           </div>
           <div className="ml-4 p-4">
-            <p className="text-lg font-semibold text-brandPrimary">Bruising</p>
+            <p className="text-lg font-semibold text-brandPrimary">BRUISING</p>
             <p className=" mt-2 text-sm">
               Small bruises will generally resolve in a few days. Occasionally
               larger bruises can develop and be uncomfortable for several days
@@ -200,7 +200,7 @@ export default function KnowTheRiskPage() {
           </div>
           <div className="ml-4 p-4">
             <p className="text-lg font-semibold text-brandPrimary">
-              Plasma and platelets risks
+              PLASMA AND PLATELETS RISKS
             </p>
             <p className=" mt-2 text-sm">
               When you donate plasma and platelets, citrate is added to stop the
@@ -218,11 +218,101 @@ export default function KnowTheRiskPage() {
               our safety protocols:
             </p>
             <ul class="list-disc p-2 mt-2">
-                <li class="text-sm">Severe reaction to citrate: can include muscle contractions or spasms, seizures, breathing difficulties or disturbance of heart rhythm.</li>
-                <li class="text-sm">Damage to red cells in the machine: if returned to you in a large volume, it can cause blood in the urine, fevers and back pain. If you are healthy, there are no long-term side-effects from return of damaged red cells.</li>
-                <li class="text-sm">Disruption to the delivery of citrate causing clotting in the tubing: if returned to you, this may cause blocking of a blood vessel. Symptoms can include dizziness, breathlessness, coughing, chest pain or limb swelling.</li>
-                <li class="text-sm">Entry of air into the collection line: if returned to you (air embolus), can cause blockage to blood vessels resulting in symptoms such as breathlessness or chest pain. </li>
-              </ul>
+              <li class="text-sm">
+                Severe reaction to citrate: can include muscle contractions or
+                spasms, seizures, breathing difficulties or disturbance of heart
+                rhythm.
+              </li>
+              <li class="text-sm">
+                Damage to red cells in the machine: if returned to you in a
+                large volume, it can cause blood in the urine, fevers and back
+                pain. If you are healthy, there are no long-term side-effects
+                from return of damaged red cells.
+              </li>
+              <li class="text-sm">
+                Disruption to the delivery of citrate causing clotting in the
+                tubing: if returned to you, this may cause blocking of a blood
+                vessel. Symptoms can include dizziness, breathlessness,
+                coughing, chest pain or limb swelling.
+              </li>
+              <li class="text-sm">
+                Entry of air into the collection line: if returned to you (air
+                embolus), can cause blockage to blood vessels resulting in
+                symptoms such as breathlessness or chest pain.{" "}
+              </li>
+            </ul>
+          </div>
+          <div className="ml-4 p-4">
+            <p className="text-lg font-semibold text-brandPrimary">
+              ARE THERE RISKS TO BEING A FREQUENT PLATELET DONOR?
+            </p>
+            <p className=" mt-2 text-sm">
+              The amount of citrate returned to you during a platelet donation
+              is higher than returned for a donation where just plasma is
+              collected. Citrate causes a temporary drop in calcium, but studies
+              have not consistently shown any long-term bone health effects in
+              frequent platelet donors. Some studies have shown a reduction in a
+              specific type of white cell (lymphocyte) in some frequent platelet
+              donors. Further research is underway, but to date there is no
+              confirmed evidence of long term consequences for health.
+            </p>
+          </div>
+          <div className="ml-4 p-4">
+            <p className="text-lg font-semibold text-brandPrimary uppercase">
+              Other needle-related reactions explained
+            </p>
+            <p className=" mt-2 text-sm">
+              As we already know needle normally used one time and then it
+              discarded as it done by ext=perts. so the following cases will be
+              very unlikely to occur:
+            </p>
+            <ul class="list-disc p-2 mt-2">
+              <li class="text-sm">
+                Nerve irritation: Transient shooting arm pain or pins and
+                needles in the arm or hand
+              </li>
+              <li class="text-sm">
+                Localized allergic reaction: Redness and swelling near needle
+                site
+              </li>
+              <li class="text-sm">
+                Piercing of an artery: If the needle goes into an artery instead
+                of a vein, the flow is under high pressure and there is a much
+                higher likelihood of bruising if any blood leaks into
+                surrounding tissues.
+              </li>
+              <li class="text-sm">
+                Local inflammation of the vein: Tenderness and redness in the
+                area of the vein usually occurring several days after donation.
+              </li>
+              <li class="text-sm">
+                Cellulitis: Infection of the skin usually causing redness,
+                swelling, pain and warmth in the area affected, which generally
+                occurs 1-2 days after donation.
+              </li>
+              <li class="text-sm">
+                Nerve injury: Damage to nerves can lead to pain, pins and
+                needles and occasionally weakness in the arm.
+              </li>
+              <li class="text-sm">
+                Major blood vessel or tendon injury: Injury which may cause
+                prolonged discomfort or impaired function and/or may require
+                surgery to correct
+              </li>
+            </ul>
+          </div>
+          <div className="ml-4 p-4">
+            <p className="text-lg font-semibold text-brandPrimary uppercase">
+              Allergic reactions
+            </p>
+            <p className=" mt-2 text-sm">
+              A localised reaction (e.g. redness, swelling, itching) can occur
+              as a result of an allergy to materials or solutions used when you
+              donate blood. Very rarely, severe allergic reactions can occur
+              causing symptoms such as, breathlessness, wheezing, facial
+              swelling, difficulty swallowing, and/or swollen tongue. This can
+              be life-threatening and requires emergency treatment.
+            </p>
           </div>
         </div>
       </div>
