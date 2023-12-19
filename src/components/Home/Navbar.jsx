@@ -62,10 +62,11 @@ const Navbar = () => {
         { name: "Request Blood", path: "/request-blood", id: 1 },
         { name: "About Blood", path: "/about-blood", id: 2 },
         { name: "Why Give Blood", path: "/about", id: 3 },
+        { name: "Learn About Blood", path: "/learn-about-blood", id: 4 },
         {
           name: "Health And Eligibility",
           path: "/blood/health-and-eligibility",
-          id: 3,
+          id: 5,
         },
       ],
     },
@@ -75,7 +76,25 @@ const Navbar = () => {
       id: 4,
       optionList: [{ name: "Donate Blood", path: "/donate-blood", id: 1 }],
     },
-    { link: "Campaign", path: "", id: 5 },
+    
+
+
+
+     {
+      link: "Campaign",
+      path: "",
+      id: 5,
+      optionList: [
+        { name: "News", path: "/news" },
+        { name: "Event", path: "/.." },
+        { name: "Stories", path: "/.." },
+        { name: "Gallery", path: "/.." },
+       
+     
+      ],
+    },
+
+
     { link: "Contact", path: "", id: 6 },
   ];
   const [activeModal, setActiveModal] = useState(null);

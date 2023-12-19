@@ -18,6 +18,9 @@ import HealthAndEligibility from "./pages/Blood/HealthAndEligibility";
 import SearchDonorPage from "./pages/SearchDonorPage";
 import DonateBlood from "./pages/Blood/DonateBlood";
 
+import News from "./pages/News/News";
+import LearnAboutBlood from "./pages/LearnAboutBlood";
+
 function App() {
   const token = localStorage.getItem("token");
 
@@ -35,6 +38,8 @@ function App() {
         <Route path="/blood/health-and-eligibility" element={<HealthAndEligibility />}></Route>
         <Route path="/home/search-donor" element={<SearchDonorPage />}></Route>
         <Route path="/donate-blood" element={<DonateBlood />}></Route>
+        <Route path="/news" element={<News />}></Route>
+        <Route path="/learn-about-blood" element={<LearnAboutBlood />}></Route>
        
       </Routes>
     </Router>
