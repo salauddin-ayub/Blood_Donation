@@ -91,6 +91,9 @@ export default function AboutBloodPage() {
         </div>
       </div>
 
+
+      
+
       <div className="about-blood-div-border-two mt-12 pb-20">
         <div className="flex justify-center items-center mt-8 text-[#444] font-bold">
           Click on a blood type below to learn more
