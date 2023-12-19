@@ -40,7 +40,7 @@ const GiveBloodFollowingOption = () => {
         <option value="FR">France</option>
         <option value="DE">Germany</option>
       </select>
-     <div className='grid grid-cols-4 mt-3'>
+     <div className='grid grid-cols-2 md:grid-cols-4 mt-3'>
      {
         bloodBank.map(blood=><BloodBankCard key={blood.id} blood={blood}></BloodBankCard>)
       }
@@ -54,7 +54,7 @@ const GiveBloodFollowingOption = () => {
         <option value="DE">Germany</option>
       </select>
 
-      <div className='grid grid-cols-3 mt-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 mt-5'>
         {
           hospital.map(ahospital =><HospitalCard key={ahospital.id} ahospital={ahospital}></HospitalCard>)
         }
@@ -68,7 +68,7 @@ const GiveBloodFollowingOption = () => {
         <option value="DE">Germany</option>
       </select>
 
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
           {
             Patients.map(patient=><PatientsCard key={patient.id} patient={patient}></PatientsCard>)
           }
