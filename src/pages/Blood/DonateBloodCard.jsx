@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ideaicon from "../../assets/icons/ion_information-circle.png"
+import arrowicon from "../../assets/icons/ion_caret-down-outline.png"
 
 const DonateBloodCard = () => {
     
@@ -42,14 +44,25 @@ const DonateBloodCard = () => {
    
    
 <div className="flex flex-col items-start">
-      <button
-        className="bg-[#E11B22] text-white px-4 py-2 rounded mb-4 w-full text-left"
-        onClick={handleButtonClick}
-      >
-        {isOpen ? 'Not Now' : 'Donate Blood'}
-      </button>
+   
+   
+   <button
+      
+      className="bg-[#E11B22] text-white px-4 py-2 rounded mb-4 w-full text-left btn "
+      onClick={handleButtonClick}
+    >
+      
+     <div className='flex items-center'>
+     <button className='mr-3'><img src={ideaicon} alt="" /></button>
+      
+      {isOpen ? 'Not Now' :'Donate Blood'}
+      <div className='ml-auto'><img src={arrowicon} alt="" /></div>
+     </div>
+    </button>
+    
+  
       {isOpen && (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4 outline-none ">
           {checkboxOptions.map((option, index) => (
             <div key={index} className="flex items-center">
               <input
@@ -67,10 +80,15 @@ const DonateBloodCard = () => {
 
     <div className="flex flex-col items-start mt-3">
       <button
-        className="bg-[#E11B22] text-white px-4 py-2 rounded mb-4 w-full text-left"
+        className="bg-[#E11B22] text-white px-4 py-2 rounded mb-4 w-full text-left "
         onClick={handleButtonClick1}
       >
-        {isOpen1 ? 'Not Now' : 'Donate Plasma'}
+         <div className='flex items-center'>
+     <button className='mr-3'><img src={ideaicon} alt="" /></button>
+      
+      {isOpen1 ? 'Not Now' :'Donate Plagma'}
+      <div className='ml-auto'><img  src={arrowicon} alt="" /></div>
+     </div>
       </button>
       {isOpen1 && (
         <div className="grid grid-cols-4 gap-4">

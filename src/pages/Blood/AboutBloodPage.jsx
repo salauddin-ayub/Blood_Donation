@@ -24,7 +24,7 @@ export default function AboutBloodPage() {
       .then(data => setAboutCard(data))
   }, [])
   return (
-    <div>
+    <div className="lg:mx-28">
       {" "}
       <div className='flex flex-col md:flex-row justify-between mt-10   '>
         <div className='lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4'>
