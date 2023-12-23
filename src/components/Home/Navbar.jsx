@@ -93,7 +93,7 @@ const Navbar = () => {
       optionList: [
         { name: "News", path: "/news" },
         { name: "Event", path: "/.." },
-        { name: "Stories", path: "/.." },
+        { name: "Stories", path: "/stories" },
         { name: "Gallery", path: "/.." },
        
      

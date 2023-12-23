@@ -1,6 +1,7 @@
 import React from "react";
 import mailDocttor from "../../../assets/male-doctor-hands-measuring-tension-patient 7.png";
-import doctorDoing from "../../../assets/doctor-doing-their-work-pediatrics-office 1.png"
+import doctorDoing from "../../../assets/doctor-doing-their-work-pediatrics-office 1.png";
+import video from "../../../assets/Vector.png";
 const NewsDSection = () => {
   return (
     <div className="mx-28">
@@ -54,11 +55,14 @@ const NewsDSection = () => {
             More information about the campaign
           </p>
 
-          <img
-            className=" items-center ml-auto mr-auto w-2/6"
-            src={mailDocttor}
-            alt=""
-          ></img>
+          <div className="relative">
+            <img
+              className=" items-center ml-auto mr-auto w-2/6"
+              src={mailDocttor}
+              alt=""
+            ></img>
+            
+          </div>
 
           <div className="p-8">
             <p className="text-[12px]">
@@ -135,32 +139,35 @@ const NewsDSection = () => {
         </div>
 
         <div className="grid grid-cols-3 bg-red-700 mt-6">
-            <div className="col-span-1 text-justify">
-                <p className="font-bold text-white p-8 text-[14px]">What Our Happy clients say!</p>
-                <div className="flex justify-between">
-                <p></p>
-                <p className="text-white -mt-4 mr-8 text-[12px]">Client’s Name</p>
-               
-
-                </div>
-                <p className="text-[12px] p-8 text-white -mt-8">
-                The slogan for the 2023 World Blood Donor Day campaign is “Give blood, give plasma, share life, share often.” It focuses on patients requiring life-long transfusion support and underlines the role every single person can play, by giving the valuable gift of blood or plasma
-                </p>
-                <p className="bg-white text-black w-24 ml-8 text-center py-1 cursor-pointer rounded-md">
-                Read More
-                </p>
-
+          <div className="col-span-1 text-justify">
+            <p className="font-bold text-white p-8 text-[14px]">
+              What Our Happy clients say!
+            </p>
+            <div className="flex justify-between">
+              <p></p>
+              <p className="text-white -mt-4 mr-8 text-[12px]">Client’s Name</p>
             </div>
-            <div className="col-span-2 ">
+            <p className="text-[12px] p-8 text-white -mt-8">
+              The slogan for the 2023 World Blood Donor Day campaign is “Give
+              blood, give plasma, share life, share often.” It focuses on
+              patients requiring life-long transfusion support and underlines
+              the role every single person can play, by giving the valuable gift
+              of blood or plasma
+            </p>
+            <p className="bg-white text-black w-24 ml-8 text-center py-1 cursor-pointer rounded-md">
+              Read More
+            </p>
+          </div>
+          <div className="col-span-2 ">
             <img
-            className=" items-center ml-auto mr-auto w-full md:h-72"   style={{ clipPath: "polygon(10% 0% , 100% 0%, 100% 100%, 0% 100%)" }}
-        
-            src={doctorDoing}
-            alt=""
-          ></img>
-
-            </div>
-
+              className=" items-center ml-auto mr-auto w-full md:h-72"
+              style={{
+                clipPath: "polygon(10% 0% , 100% 0%, 100% 100%, 0% 100%)",
+              }}
+              src={doctorDoing}
+              alt=""
+            ></img>
+          </div>
         </div>
       </div>
     </div>
