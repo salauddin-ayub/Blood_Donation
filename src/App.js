@@ -21,6 +21,7 @@ import KnowTheRisk from "./pages/Blood/KnowTheRisk";
 
 import News from "./pages/News/News";
 import LearnAboutBlood from "./pages/LearnAboutBlood";
+import CampaignGallery from "./pages/Campaign/CampaignGallery";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -42,6 +43,7 @@ function App() {
         <Route path="/blood/know-the-risk" element={<KnowTheRisk />}></Route>
         <Route path="/news" element={<News />}></Route>
         <Route path="/learn-about-blood" element={<LearnAboutBlood />}></Route>
+        <Route path="/campaign-gallery-all" element={<CampaignGallery />}></Route>
        
       </Routes>
     </Router>

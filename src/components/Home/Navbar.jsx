@@ -94,7 +94,7 @@ const Navbar = () => {
         { name: "News", path: "/news" },
         { name: "Event", path: "/.." },
         { name: "Stories", path: "/.." },
-        { name: "Gallery", path: "/.." },
+        { name: "Gallery", path: "/campaign-gallery-all" },
        
      
       ],
