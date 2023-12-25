@@ -24,7 +24,7 @@ export default function AboutBloodPage() {
       .then(data => setAboutCard(data))
   }, [])
   return (
-    <div>
+    <div className="mx-28">
       {" "}
       <div className='flex flex-col md:flex-row justify-between mt-10   '>
         <div className='lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4'>
@@ -102,7 +102,7 @@ export default function AboutBloodPage() {
       </div>
       {/* How your donated red blood cells help */}
       <div className="mt-12 bg-[#FFF]  w-full lg:h-[600px] md:h-[700px] h-[1360px]  " style={{
-        boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
+        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
 
 
@@ -132,7 +132,7 @@ export default function AboutBloodPage() {
             </div>
             <div>
               <h2 className="text-[#E11B22] font-bold text-[60px]">19%</h2>
-              <p className="text-[#E11B22] ">anemia and 
+              <p className="text-[#E11B22] ">anemia and
                 other needs</p>
             </div>
           </div>
@@ -198,9 +198,9 @@ export default function AboutBloodPage() {
 
       {/* Blood Types and Transfusion */}
 
-      <div className="mt-12  bg-[#FFF]  w-full md:h-[300px] h-[800px] relative p-1 " style={{
-        
-        boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      <div className="mt-12 rounded-lg  bg-[#FFF]  w-full md:h-[300px] h-[800px] relative p-1 " style={{
+
+        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
         <div>
           <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md text-left mb-10 md:mb-0 absolute -top-10">
@@ -208,18 +208,18 @@ export default function AboutBloodPage() {
           </button></h2>
         </div>
 
-        <div className="absolute top-10">
+        <div className="absolute top-10 ml-2">
           <p>There are very specific ways in which blood types must be matched for a safe transfusion. The right blood transfusion can mean the difference between life and death. Use the interactive graphic below to learn more about matching blood types for transfusions.
             Also, Rh-negative blood is given to Rh-negative patients, and Rh-positive or Rh-negative blood may be given to Rh-positive patients. The rules for plasma are the reverse.</p>
 
-          <li className="text-xl mt-6">The universal red cell donor has Type O negative blood.</li>
-          <li className="text-xl">The universal red cell donor has Type O negative blood.</li>
+          <li className="mt-5 text-sm">The universal red cell donor has Type O negative blood.</li>
+          <li className="text-sm">The universal red cell donor has Type O negative blood.</li>
         </div>
       </div>
 
       {/* total blood supply */}
-      <div className="mt-12  bg-[#FFF]  w-full md:h-[500px] h-[800px] relative p-1 shadow-2xl " style={{
-       boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
+      <div className="mt-12 mb-8 rounded-lg  bg-[#FFF]  w-full md:h-[500px] h-[800px] relative p-1 shadow-2xl " style={{
+        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}>
         <div>
           <h2>   <button className="bg-brandPrimary text-white lg:px-6 md:px-4 px-6 lg:py-4 md:py-2 py-4 rounded-md ml-2 mt-4 lg:mt-2 md:mt-2  font-bold shadow-md text-left mb-10 md:mb-0 absolute -top-10">
@@ -227,8 +227,8 @@ export default function AboutBloodPage() {
           </button></h2>
         </div>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 text-center ">
-        
-        <div className="flex flex-col items-center mt-10 ">
+
+          <div className="flex flex-col items-center mt-10 ">
             <div >
               <h2>O Positive</h2>
               <p>(O+)</p>
@@ -317,11 +317,11 @@ export default function AboutBloodPage() {
             </div>
           </div>
         </div>
-          {/* ======== */}
-        </div>
-
+        {/* ======== */}
       </div>
-   
+
+    </div>
+
 
 
   );

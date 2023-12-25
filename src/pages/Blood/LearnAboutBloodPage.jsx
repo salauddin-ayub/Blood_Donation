@@ -17,6 +17,7 @@ export default function LearnAboutBloodPage() {
         <TitleTopComponent
           secondTitle={"Blood"}
           thirdTitle={"Learn About Blood"}
+          
         />
       </div>
 

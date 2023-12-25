@@ -6,6 +6,7 @@ import "flatpickr/dist/l10n/default";
 import { useState } from "react";
 import ImageNews from "../../../src/assets/newsDoctors.png";
 import ConerImg from "../../../src/assets/Rectangle 660.png";
+import video from "../../../src/assets/Vector.png";
 import { Link } from "react-router-dom";
 function NewsSections() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -105,9 +106,15 @@ function NewsSections() {
           />
            <Link to="/details">
            <img className="-mt-8" src={ImageNews} alt=""></img>
+
+           <img
+                className="justify-end h-8 w-8 z-40 relative bg-red-600 rounded-full p-2 -mt-10   ml-auto mr-2 ring-4 ring-red-300 "
+                src={video}
+                alt=""
+              />
            </Link>
        
-          <p className="mt-1 font-bold text-center">
+          <p className="mt-2 font-bold text-center">
             World Blood Donor Day 2023
           </p>
           <p className=" m-4 mt-3">
