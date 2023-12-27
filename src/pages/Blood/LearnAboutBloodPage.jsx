@@ -377,7 +377,7 @@ export default function LearnAboutBloodPage() {
 
        
       {/* START RED ANIMATION */}
-      <div className="about-blood-div-border-two mt-12 pb-28 extraHere mt-96">
+      <div className="about-blood-div-border-two mt-12 pb-28 extraHere">
           <div className="flex justify-center items-center mt-8 text-[#444] font-semibold">
             Click on a blood type below to learn more
           </div>
