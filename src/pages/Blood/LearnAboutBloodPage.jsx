@@ -21,12 +21,12 @@ export default function LearnAboutBloodPage() {
 
       <div className="lg:mx-28 md:mx-28 mx-3">
         <div className="mt-2">
-          <button className="bg-brandPrimary text-[18px] text-white py-3 px-4 rounded-lg ml-0">
+          <button className="bg-brandPrimary text-[18px] text-white lg:py-3 md:py-3 py-2 lg:px-4 md:px-4 px-3 rounded-lg ml-0">
             Learn About Blood
           </button>
           <div className="about-blood-div-border pb-8 -mt-6 rounded-lg">
-            <div className="p-8 pb-0 text-[12px] pt-10">
-              <p>
+            <div className="p-8 pb-0 lg:text-[12px] md:text-[12px] text-[13px] lg:pl-8 md:pl-8 pl-4">
+              <p className="text-justify">
                 Blood is a specialized body fluid. It has four main components:
                 plasma, red blood cells, white blood cells, and platelets. Blood
                 has many different functions, including:
@@ -34,7 +34,7 @@ export default function LearnAboutBloodPage() {
             </div>
 
             <div>
-              <ul className="text-[12px] lg:pl-12 md:pl-12 pl-0 mt-2 font-semibold ul-li">
+              <ul className="text-[12px] lg:pl-12 lg:ml-0 md:ml-0 ml-12 pl-0 mt-2 font-semibold ul-li">
                 <li className="">
                   transporting oxygen and nutrients to the lungs and tissues
                 </li>
@@ -52,7 +52,7 @@ export default function LearnAboutBloodPage() {
               </ul>
             </div>
 
-            <div className="pl-8 pr-8 mt-2 text-[12px]">
+            <div className="lg:px-8 md:px-8 px-4 lg:text-[12px] md:text-[12px] text-[13px] lg:mt-2 md:mt-2 mt-0">
               <p className="text-justify">
                 The blood that runs through the veins, arteries, and capillaries
                 is known as whole blood, a mixture of about 55 percent plasma
@@ -65,31 +65,31 @@ export default function LearnAboutBloodPage() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-8 text-[#444] text-[20px] font-bold">
+        <div className="flex justify-center items-center lg:mt-8 md:mt-8 mt-6 text-[#444] lg:text-[20px] md:text-[20px] text-[17px] font-bold">
           “Every Blood Is Different“
         </div>
 
-        <div className="mt-6">
-          <button className="bg-brandPrimary text-[18px] text-white py-3 px-4 rounded-lg ml-0">
+        <div className="lg:mt-6 md:mt-6 mt-3">
+          <button className="bg-brandPrimary text-[18px] text-white lg:py-3 md:py-3 py-2 lg:px-4 md:px-4 px-3 rounded-lg ml-0">
             How Blood Type Is Determined
           </button>
           <div className="about-blood-div-border pb-8 -mt-6 rounded-lg">
-            <div className="p-8 pb-0 text-[12px] pt-10">
-              <p>
+            <div className="p-8 pb-0 pt-10 lg:text-[12px] md:text-[12px] text-[13px] lg:pl-8 md:pl-8 pl-4">
+              <p className="text-justify">
                 Blood types are determined by the presence or absence of certain
-                antigens – substances that can trigger an immune response if
+                antigens–substances that can trigger an immune response if
                 they are foreign to the body. Since some antigens can trigger a
                 patient's immune system to attack the transfused blood, safe
                 blood transfusions depend on careful blood typing and
                 cross-matching.{" "}
-                <span className="font-semibold">
+                <span className="font-semibold text-justify">
                   Do you know what blood type is safe for you if you need a
                   transfusion?
                 </span>
               </p>
             </div>
 
-            <div className="pl-8 pr-8 pt-8 text-[12px]">
+            <div className="lg:px-8 md:px-8 px-4 lg:text-[12px] md:text-[12px] text-[13px] lg:pt-8 md:pt-8 pt-4">
               <p className="text-justify">
                 There are four major blood groups determined by the presence or
                 absence of two antigens, A and B, on the surface of red blood
@@ -108,32 +108,32 @@ export default function LearnAboutBloodPage() {
           </div>
 
           <div className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-3 gap-4 mt-4">
-            <div className="lg:col-span-3 md:col-span-3 col-span-3">
-              <div className="flex flex-col justify-end items-end mt-28 ">
+            <div className="lg:col-span-3 md:col-span-3 col-span-3 ">
+              <div className="flex flex-col lg:justify-end md:justify-end justify-center lg:items-end md:items-end items-center lg:mt-28 md:mt-28 mt-4">
                 <div>
-                  <button className="bg-brandPrimary rounded-full text-[18px] text-center text-white px-6 py-2 learn-about-blood-button-border w-36">
+                  <button className="bg-brandPrimary rounded-full lg:text-[18px] md:text-[18px] text-[24px] font-semibold text-center text-white px-6 py-2 learn-about-blood-button-border lg:w-36 md:w-36 w-96">
                     Group A
                   </button>
                 </div>
-                <div className="mt-6">
-                  <button className="rounded-full text-[18px] text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border w-36">
+                <div className="lg:mt-6 md:mt-6 mt-8">
+                  <button className="rounded-full lg:text-[18px] md:text-[18px] text-[24px] font-semibold text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border lg:w-36 md:w-36 w-96">
                     Group B
                   </button>
                 </div>
 
-                <div className="mt-6">
-                  <button className="rounded-full text-[18px] text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border w-36">
+                <div className="lg:mt-6 md:mt-6 mt-8">
+                  <button className="rounded-full lg:text-[18px] md:text-[18px] text-[24px] font-semibold text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border lg:w-36 md:w-36 w-96">
                     Group AB
                   </button>
                 </div>
-                <div className="mt-6">
-                  <button className="rounded-full text-[18px] text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border w-36">
+                <div className="lg:mt-6 md:mt-6 mt-8">
+                  <button className="rounded-full lg:text-[18px] md:text-[18px] text-[24px] font-semibold text-center text-[#44444480] px-6 py-2 learn-about-blood-button-border lg:w-36 md:w-36 w-96">
                     Group O
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 md:col-span-6 col-span-3 mt-8">
+            <div className="lg:col-span-6 md:col-span-6 col-span-3 mt-8 border">
               <div className="flex justify-center mt-8 mb-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
