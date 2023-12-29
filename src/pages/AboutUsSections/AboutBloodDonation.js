@@ -1,19 +1,14 @@
 import React from "react";
 import ImageBlood from "../../assets/blood.jpeg";
 import ImageBlood1 from "../../assets/blood1.png";
+import TitleTopComponent from "../../components/Blood/TitleTopComponent";
 
 function AboutBloodDonation() {
   return (
-    <div className="max-w-[2036px] ml-auto mr-auto">
-      <div className="mx-28">
-        <div className="w-full h-20 flex justify-between items-center">
-          <div>
-            <p className="font-semibold">
-              {" "}
-              Home <span className="text-brandPrimary">&gt;</span> About Us{" "}
-              <span className="text-brandPrimary">&gt;</span> About
-            </p>
-          </div>
+    <div className=" ml-auto mr-auto">
+      <div className="">
+        <div>
+          <TitleTopComponent secondTitle={"About Us"} thirdTitle={"About"} />
         </div>
         <div className="grid grid-cols-4  mx-auto mt-4">
           <div className="col-span-1 bg-brandPrimary md:ml-10 rounded-md ">
@@ -70,7 +65,7 @@ function AboutBloodDonation() {
         </div>
 
         {/* blood image sectons */}
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-5  mt-16 text-sx ml-8 mr-8 ">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-5  mt-16 text-sx ">
           <div className="shadow-2xl p-4 text-16 rounded-sm">
             <div className="zindexm relative">
               <p className="p-4 zindexm bg-brandPrimary rounded-md font-bold text-white w-2/4 ">
