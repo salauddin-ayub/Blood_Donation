@@ -14,7 +14,7 @@ export default function AboutUs() {
       <div className="">
         <CarouselBanner />
       </div>
-      <div className="mx-24">
+      <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
         <AboutBloodDonation />
       </div>
       <div className="">
