@@ -5,7 +5,7 @@ import TitleTopComponent from "../../../components/Blood/TitleTopComponent";
 
 function OurTeamSections() {
   return (
-    <div className="mx-28">
+    <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-28 xl:mx-36">
       <div>
         <TitleTopComponent secondTitle={"About Us"} thirdTitle={"Our Board"} />
       </div>

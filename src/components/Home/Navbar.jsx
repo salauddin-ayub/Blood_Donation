@@ -81,6 +81,7 @@ const Navbar = () => {
       optionList: [
         { name: "Donate Blood", path: "/donate-blood", id: 1 },
         { name: "First Time Blood Donation", path: "/first-time-blood", id: 2 },
+        { name: "Preparing to give blood", path: "/preparing-to-give-blood", id: 3 },
       ],
     },
     {
@@ -88,15 +89,25 @@ const Navbar = () => {
       path: "",
       id: 5,
       optionList: [
-        { name: "News", path: "/news" },
+        { name: "News", path: "/news", id: 1 },
         // { name: "Event", path: "/.." },
-        { name: "Gallery", path: "/campaign-gallery-all" },
-        { name: "Stories", path: "/stories" },
+        { name: "Gallery", path: "/campaign-gallery-all", id: 2 },
+        { name: "Stories", path: "/stories", id: 3 },
       ],
     },
 
-    { link: "Contact", path: "", id: 6 },
+    {
+      link: "Contact",
+      path: "/contact-us",
+      id: 6,
+    },
+    {
+      link: "Login",
+      path: "/login",
+      id: 7,
+    },
   ];
+
   const [activeModal, setActiveModal] = useState(null);
 
   const openModal = (id) => {
@@ -108,6 +119,7 @@ const Navbar = () => {
   };
 
   console.log("Active Modal", activeModal);
+  const index = 1;
 
   return (
     <div className="w-full md:bg-transparent  fixed top-0 left-0 right-0 inline-block zindexnav ">
@@ -279,11 +291,11 @@ const Navbar = () => {
                               style={{ width: "calc(300% - 27px)" }}
                             >
                               <div className="bg-white max-w-md mx-auto rounded-b-sm w-56 border border-t-0 shadow-xl">
-                                <ul>
+                                <ul className="p-3 ">
                                   {navItems?.[activeModal - 1]?.optionList?.map(
                                     (val, index) => (
                                       <li
-                                        className="hover:bg-red-200 py-1 pl-1 text-xs"
+                                        className="hover:bg-red-200 py-1 pl-1 text-xs rounded-sm"
                                         key={val.path}
                                       >
                                         <button
@@ -366,21 +378,37 @@ const Navbar = () => {
 
             {/* nav items for mobile devices */}
             <div
-              className={`space-y-4 px-4 mt-[70px] py-7 bg-[#e11b22b3] ${
+              className={`space-y-4 px-4 mt-[70px] py-7 bg-[#e11b22b3] overflow-y-auto ${
                 isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
               }`}
             >
-              {navItems.map(({ link, path }) => (
-                <Link
-                  to={path}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  key={path}
-                  className="block text-gray90 text-white first:font-medium text-center hover:border-r hover:border-white"
-                >
-                  {link}
-                </Link>
+              {navItems.map(({ link, path, optionList, id }) => (
+                <div key={id} className="relative group">
+                  <Link
+                    to={path}
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    className="block text-gray90 text-white first:font-medium text-center hover:border-r hover:border-white"
+                  >
+                    {link}
+                  </Link>
+                  {optionList && optionList.length > 0 && (
+                    <div className="left-0 top-full bg-[#e11b22b3] py-2 px-4 mt-2 rounded-md shadow-lg max-h-48 overflow-y-auto">
+                      {optionList.map(
+                        ({ name, path: optionPath, id: optionId }) => (
+                          <Link
+                            key={optionId}
+                            to={optionPath}
+                            className="block text-white hover:text-gray90 py-1"
+                          >
+                            {name}
+                          </Link>
+                        )
+                      )}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </nav>

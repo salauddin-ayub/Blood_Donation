@@ -25,6 +25,9 @@ import CampaignGallery from "./pages/Campaign/CampaignGallery";
 import NewsDetails from "./pages/News/NewsDetailsSectons/NewsDetails";
 import Stories from "./pages/Stories/Stories";
 import FirstTimeBlood from "./pages/Donor/FirstTimeBlood";
+import ContactUs from "./components/Home/ContactUs";
+import ContactUsPage from "./pages/ContactUsPage";
+import PreparingToGiveBlood from "./pages/Donor/PreparingToGiveBlood";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -45,11 +48,13 @@ function App() {
         <Route path="/donate-blood" element={<DonateBlood />}></Route>
         <Route path="/blood/know-the-risk" element={<KnowTheRisk />}></Route>
         <Route path="/news" element={<News />}></Route>
-        <Route path="/learn-about-blood" element={<LearnAboutBlood />}></Route>
+        <Route path="/learn-about-blood" element={<LearnAboutBlood />}></Route> 
+        <Route path="/preparing-to-give-blood" element={<PreparingToGiveBlood></PreparingToGiveBlood>}></Route>
         <Route path="/campaign-gallery-all" element={<CampaignGallery />}></Route>
         <Route path="/details" element={<NewsDetails />}></Route>
         <Route path="/stories" element={<Stories/>}></Route>
         <Route path="/first-time-blood" element={<FirstTimeBlood/>}></Route>
+        <Route path="/contact-us" element={<ContactUsPage/>}></Route>
       </Routes>
     </Router>
   );
