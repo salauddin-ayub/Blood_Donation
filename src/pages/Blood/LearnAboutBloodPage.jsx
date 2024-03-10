@@ -5694,8 +5694,8 @@ export default function LearnAboutBloodPage() {
 
 
       <div className="pb-96"></div>
-      <p>HERE: <br/>
-      https://drive.google.com/file/d/1czuNkGhTrTfjO8LXyQvsWh6jre1eXirD/view?usp=sharing
+      <p>HERE LINK: <br/>
+      https://drive.google.com/drive/folders/1i1OjLC0zMh2WWRubE2hdkZYeL369N2iD?usp=sharing
       </p>
     </div>
   );
