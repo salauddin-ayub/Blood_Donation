@@ -5692,7 +5692,11 @@ export default function LearnAboutBloodPage() {
         {/* HERE LAST LAST LAST LAST LAST LAST FOR SMALL DEVICE END END END END */}
       </div>
 
+
       <div className="pb-96"></div>
+      <p>HERE: <br/>
+      https://drive.google.com/file/d/1czuNkGhTrTfjO8LXyQvsWh6jre1eXirD/view?usp=sharing
+      </p>
     </div>
   );
 }
